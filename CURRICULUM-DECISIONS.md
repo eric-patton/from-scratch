@@ -459,16 +459,18 @@ doesn't feel lost" — not "identical experience."
 - "Done" definition (3-part rule)
 - AI policy
 - Repo layout
-- Session 1 design (PB&J + Scratch tour)
+- **Phase 1 (Scratch) — all 9 sessions drafted** (Welcome/PB&J,
+  Sequences, Loops/Pen, Events, Conditionals, Variables, Putting
+  It Together, Milestone Day 1, Milestone Day 2 + Demo Day)
+- `tools/new-session.sh` scaffolder + `tools/build-book.sh`
+- GitHub Actions deploy to Pages
 
 ### Open questions / future decisions
 
-- Sessions 2-9 of Phase 1 (need to be designed)
 - Whether to design Phase 2's Turtle bridge before or after running Phase 1
 - Specific milestone project list per phase
 - Capstone for the full curriculum (after Phase 8)
 - When/whether to add an adult class
-- Specific tools script implementation (`new-session.sh`)
 
 ### Known unknowns to revisit
 

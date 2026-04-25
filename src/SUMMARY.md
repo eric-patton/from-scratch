@@ -15,6 +15,8 @@
 - [Session 5: Conditionals — making decisions](phase-01-scratch/session-05-conditionals.md)
 - [Session 6: Variables — remembering things](phase-01-scratch/session-06-variables.md)
 - [Session 7: Putting it together — a small game](phase-01-scratch/session-07-putting-it-together.md)
+- [Session 8: Milestone project work day 1](phase-01-scratch/session-08-milestone-day-1.md)
+- [Session 9: Milestone project work day 2 + demo day](phase-01-scratch/session-09-milestone-day-2-and-demo.md)
 
 ---
 
