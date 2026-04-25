@@ -62,17 +62,71 @@ ones we lean into:
   habit that makes a good employee, a good student, and a good
   collaborator.
 
-## What it costs
+## Costs and equipment
 
-Free.
+The class itself is **free.** Free to enroll, free for life —
+students who finish the full curriculum can come back at any time,
+even years later, with questions or to keep working on projects.
 
-Most local instances of the class also provide a computer that
-your child keeps — check with your local instructor about whether
-that applies to your situation.
+Every student does need a computer to work on, and the class
+keeps that cost low and flexible. The typical options:
 
-The class itself is free for life. Students who finish the full
-curriculum can come back at any time, even years later, with
-questions or to keep working on projects.
+- **Free donated laptop.** When community members have donated
+  working laptops, your family can take one at no cost. Limited
+  availability — first come, first served.
+- **Refurbished mini desktop (~$150).** A small refurbished
+  desktop computer, about the size of a hardback book (a Lenovo
+  ThinkCentre M710q or similar). Plenty of power for everything
+  in the curriculum. You'll need a monitor, keyboard, and mouse —
+  ones you already have at home, or ones the class can sometimes
+  help you find through donated peripherals.
+- **Higher-end option.** If you'd prefer a newer or more powerful
+  computer for your child, talk to Mr. Eric directly. He can
+  help you pick something that works for the curriculum without
+  overspending.
+- **Not sure?** The signup form has a "let's discuss" option.
+  Pick that and Mr. Eric will walk you through what fits your
+  family.
+
+Whichever option you pick, **the machine arrives ready to use.**
+Mr. Eric pre-installs Scratch, Python, the Python editor (Thonny),
+and every other tool the class uses. Your child doesn't have to
+install anything to start.
+
+Once your child has their computer, **it's theirs forever.** Even
+if your child stops attending, the machine stays with your family.
+
+**If equipment cost is a real concern at any tier**, please let
+Mr. Eric know. The class exists to teach kids who want to learn —
+families shouldn't be excluded based on what they can afford.
+There's flexibility on the equipment side, and donated equipment
+exists specifically for families for whom the standard tier isn't
+comfortable.
+
+## Can you donate equipment?
+
+The donated-laptop tier above only works because other families
+in the community give equipment. **If you have a working computer,
+monitor, keyboard, mouse, or other peripherals you no longer use
+— please consider donating to the class.** What you donate goes
+straight to other kids in the class, especially the ones whose
+families need the help.
+
+What's most useful:
+
+- **Working laptops** that can run Linux Mint (basically anything
+  from the last 8-10 years). The class re-images them and uses
+  them as student machines.
+- **Monitors** — any size, working condition. Paired with the
+  refurbished mini desktops.
+- **USB keyboards and mice.** Standard models, nothing fancy.
+- **Power adapters and chargers**, especially if you have spares
+  for laptop or desktop equipment.
+
+The signup form includes a "want to donate?" question. Or you can
+mention it to Mr. Eric directly any time — even if your child
+isn't enrolled, donated equipment is welcome and goes to a kid
+who needs it.
 
 ## When and where
 
