@@ -1,4 +1,4 @@
-# From Scratch
+# From Scratch Programming Class
 
 A free programming curriculum for kids and teens (ages 9+), originally
 built for a weekly class at a local church. This repository contains

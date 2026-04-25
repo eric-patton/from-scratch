@@ -1,4 +1,4 @@
-# From Scratch — Curriculum Decisions
+# From Scratch Programming Class — Curriculum Decisions
 
 This document captures the design decisions made for the From Scratch
 programming curriculum. It exists to:

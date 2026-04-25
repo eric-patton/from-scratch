@@ -2,7 +2,7 @@
 
 *This is a stub — a fuller version is coming.*
 
-**From Scratch** is a free programming class for kids and teens
+**From Scratch Programming Class** is a free class for kids and teens
 (ages 9 and up). The full curriculum is about 150 hours of class
 time, which takes roughly one to two years depending on how often
 the class meets.

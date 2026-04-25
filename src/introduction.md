@@ -1,7 +1,7 @@
 # Introduction
 
-Welcome to **From Scratch** — a free programming class for kids and
-teens, and the textbook that goes with it.
+Welcome to the **From Scratch Programming Class** — a free class for
+kids and teens, and the textbook that goes with it.
 
 This book is a record of everything we cover in class, written so you
 can read it on your own. Every chapter matches one class session. If
