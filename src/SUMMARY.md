@@ -28,6 +28,8 @@
 - [Session 2: Telling the turtle what to do](phase-02-turtle/session-02-sequences.md)
 - [Session 3: Loops in Python — `for` and `range`](phase-02-turtle/session-03-loops.md)
 - [Session 4: Functions — making your own commands](phase-02-turtle/session-04-functions.md)
+- [Session 5: Variables and a little math](phase-02-turtle/session-05-variables.md)
+- [Session 6: Conditionals — `if` in Python](phase-02-turtle/session-06-conditionals.md)
 
 ---
 
