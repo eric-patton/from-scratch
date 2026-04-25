@@ -4,8 +4,9 @@ Programming words, in plain language. New words get added as they
 come up in chapters. If a word here doesn't make sense yet, don't
 worry — it'll show up in a session and click into place.
 
-Words from later phases (Python, web, etc.) get added when those
-phases start. For now, this glossary covers Phase 1 (Scratch).
+Words from later phases (web, etc.) get added when those phases
+start. So far this glossary covers Phase 1 (Scratch) and Phase 2
+(Python with Turtle).
 
 ---
 
@@ -102,6 +103,134 @@ category.
 Where a sprite is on the stage. X is left-right (negative is left,
 positive is right). Y is up-down (negative is down, positive is
 up). The middle of the stage is x = 0, y = 0.
+
+---
+
+## Phase 2 — Python words
+
+**Argument**
+A value you pass to a function when you call it. In
+`t.forward(100)`, the `100` is an argument — it's the
+information the function uses. (See also: parameter.)
+
+**Comment**
+Text starting with `#` that Python ignores. Used to leave notes
+in your code for yourself or other readers — like a label on a
+section of code. Comments don't change what the program does.
+
+**Elif**
+Short for "else if." A way to check another condition after an
+`if`'s condition was false. You can chain as many `elif`s as you
+want before a final `else` (or no `else` at all).
+
+**Else**
+The "otherwise" part of an `if`. The body under `else` runs when
+the `if`'s condition is false. Optional — you don't always need
+one.
+
+**Error message**
+What Python tells you in red text when something goes wrong.
+Error messages are *trying to help.* They usually tell you the
+file, the line number, and what kind of problem (`SyntaxError`,
+`NameError`, `AttributeError`, etc.). Read them slowly.
+
+**Float**
+A number with a decimal point, like `5.0` or `3.14`. Division
+in Python (`/`) always gives a float, even when the answer is
+whole (`15 / 3` is `5.0`, not `5`).
+
+**For loop**
+The Python version of Scratch's `repeat`. `for i in range(N):`
+runs the indented body N times. The `i` is a loop variable that
+takes the values 0, 1, 2, ..., N-1.
+
+**Function**
+A named chunk of code you can call by name. You define it with
+`def name():` and the indented body underneath. You call it by
+writing `name()` somewhere later. The biggest new idea in
+Phase 2.
+
+**IDE**
+Short for **Integrated Development Environment.** A program for
+writing code. Thonny is an IDE. So are VS Code, PyCharm, and
+many others. We use Thonny in this class.
+
+**Import**
+A Python statement that brings in a *module* (a toolbox of code
+written by someone else) so you can use it. `import turtle`
+brings in the turtle module so you can do `t = turtle.Turtle()`.
+
+**Indentation**
+Spaces at the start of a line. In Python, indentation is part
+of the grammar — it's how Python knows which lines belong inside
+a `for` loop, `if`, `def`, etc. Lines indented underneath are
+"inside"; lines not indented are "outside." Standard is 4
+spaces.
+
+**Module**
+A bundle of Python code you can `import` and use. Comes from
+Python's standard library (like `turtle`) or from the internet
+(like Pygame, later in the class). Sometimes also called a
+**library**.
+
+**Operator**
+A symbol that does something. Math operators: `+ - * /`.
+Comparison operators: `< > == != <= >=`. The `=` sign is the
+*assignment* operator (gives a variable a value).
+
+**Parameter**
+A placeholder name in a function definition. In
+`def draw_square(size):`, `size` is the parameter. When you call
+the function with `draw_square(50)`, the parameter `size` gets
+the value `50` for that call. (See also: argument.)
+
+**Print**
+A Python function (`print(...)`) that displays text or values in
+the shell. Useful for showing output to the user, and especially
+useful for debugging — `print(size)` shows what `size` is right
+now.
+
+**Python**
+The programming language we use after Scratch. Real,
+general-purpose, used by professional developers, scientists,
+data analysts, web developers — almost everyone. We use it
+through Thonny.
+
+**range**
+A built-in Python function that gives a sequence of numbers.
+`range(5)` is the numbers 0, 1, 2, 3, 4. Almost always used
+inside a `for` loop: `for i in range(5):` runs five times.
+
+**Run**
+To execute your program. In Thonny, click the green Run button
+or press F5. Python reads your code top to bottom and does what
+it says.
+
+**Save**
+To write your code to a file on your computer. Files end in
+`.py`. Save before you Run, or Thonny will sometimes complain.
+Use Ctrl-S as a shortcut.
+
+**Shell**
+The bottom panel of Thonny. Where Python prints messages, where
+errors appear, and where you can type one-line Python
+experiments interactively (without saving a file).
+
+**SyntaxError**
+A Python error that means "your code's grammar is wrong."
+Usually a missing colon, missing parenthesis, or wrong
+indentation. Python points at where it noticed the problem
+(which is sometimes a line *after* the actual mistake).
+
+**Thonny**
+The Python editor we use in class. Has an editor (top), a shell
+(bottom), and a green Run button. Pre-installed on every class
+machine.
+
+**Turtle**
+The Python module we use in Phase 2 to draw on the screen.
+Imported with `import turtle`. The turtle is a little arrow
+(or actual turtle shape) that moves around drawing lines.
 
 ---
 
