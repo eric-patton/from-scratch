@@ -40,6 +40,8 @@
 - [Phase 3 overview](phase-03-python-basics/README.md)
 - [Session 1: Welcome to Python (without the turtle)](phase-03-python-basics/session-01-welcome.md)
 - [Session 2: Variables and types](phase-03-python-basics/session-02-variables-and-types.md)
+- [Session 3: Strings — text in Python](phase-03-python-basics/session-03-strings.md)
+- [Session 4: Conditionals — combining decisions](phase-03-python-basics/session-04-conditionals-deeper.md)
 
 ---
 
