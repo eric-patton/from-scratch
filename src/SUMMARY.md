@@ -11,6 +11,8 @@
 - [Session 1: Welcome & the peanut butter problem](phase-01-scratch/session-01-welcome.md)
 - [Session 2: Sequences and the stage](phase-01-scratch/session-02-sequences.md)
 - [Session 3: Loops — doing things over and over](phase-01-scratch/session-03-loops.md)
+- [Session 4: Events — making things happen when...](phase-01-scratch/session-04-events.md)
+- [Session 5: Conditionals — making decisions](phase-01-scratch/session-05-conditionals.md)
 
 ---
 
