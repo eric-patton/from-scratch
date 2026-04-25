@@ -30,6 +30,8 @@
 - [Session 4: Functions — making your own commands](phase-02-turtle/session-04-functions.md)
 - [Session 5: Variables and a little math](phase-02-turtle/session-05-variables.md)
 - [Session 6: Conditionals — `if` in Python](phase-02-turtle/session-06-conditionals.md)
+- [Session 7: Putting it together — a garden scene](phase-02-turtle/session-07-putting-it-together.md)
+- [Session 8: Milestone project + demo day](phase-02-turtle/session-08-milestone-and-demo.md)
 
 ---
 

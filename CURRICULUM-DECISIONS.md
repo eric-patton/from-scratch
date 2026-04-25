@@ -466,12 +466,14 @@ doesn't feel lost" — not "identical experience."
 - **Phase 1 (Scratch) — all 9 sessions drafted** (Welcome/PB&J,
   Sequences, Loops/Pen, Events, Conditionals, Variables, Putting
   It Together, Milestone Day 1, Milestone Day 2 + Demo Day)
+- **Phase 2 (Python with Turtle) — all 8 sessions drafted**
+  (Welcome to Python, Turtle commands, Loops, Functions,
+  Variables, Conditionals, Garden Scene, Milestone + Demo)
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
 
 ### Open questions / future decisions
 
-- Whether to design Phase 2's Turtle bridge before or after running Phase 1
 - Specific milestone project list per phase
 - Capstone for the full curriculum (after Phase 8)
 - When/whether to add an adult class
