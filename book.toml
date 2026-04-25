@@ -1,0 +1,26 @@
+[book]
+title = "Old Zion Hill Programming Class"
+authors = ["Eric Patton"]
+description = "A free, two-year programming curriculum for kids and teens (ages 9+). Per-session handouts compile into a searchable textbook covering Scratch, Python, desktop apps, 2D games, and web development."
+language = "en"
+src = "src"
+
+[output.html]
+default-theme = "rust"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/eric-patton/from-scratch"
+edit-url-template = "https://github.com/eric-patton/from-scratch/edit/main/{path}"
+
+[output.html.fold]
+enable = true
+level = 1
+
+[output.html.search]
+enable = true
+limit-results = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2

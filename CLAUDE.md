@@ -170,6 +170,25 @@ Eric is a principal engineer. He prefers:
 - **Acknowledge errors quickly.** If you made a mistake, own it, fix
   it, move on. No excessive apology, no hedging, no defensiveness.
 
+## Git and commits
+
+This is a personal-account repo. Commit attribution and SSH routing
+diverge from the system defaults — get this right or commits land
+under the wrong identity.
+
+- **Remote URL:** `git@github-personal:eric-patton/from-scratch.git`.
+  Uses the `github-personal` SSH host alias from `~/.ssh/config`,
+  which routes through `id_ed25519_personal` and authenticates as
+  `eric-patton`. The default `github.com` host routes through the
+  *work* key and authenticates as `eric-patton-bam` — wrong account
+  for this repo.
+- **Commit email:** `ursine.blue@proton.me`, set per-repo via
+  `git config user.email` inside this repo. Global git config still
+  carries the work email — don't change it globally.
+- **Author name:** `Eric Patton` (global config, no override needed).
+- **Ignored from git:** `CONVERSATION-CONTEXT-INTERNAL.md` is in
+  `.gitignore` — working notes, not for the public repo.
+
 ## Current status
 
 See the **Status** section at the bottom of `CURRICULUM-DECISIONS.md`
