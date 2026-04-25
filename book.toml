@@ -1,7 +1,7 @@
 [book]
-title = "Old Zion Hill Programming Class"
+title = "From Scratch"
 authors = ["Eric Patton"]
-description = "A free, two-year programming curriculum for kids and teens (ages 9+). Per-session handouts compile into a searchable textbook covering Scratch, Python, desktop apps, 2D games, and web development."
+description = "A free programming curriculum (~150 hours) for kids and teens (ages 9+). Per-session handouts compile into a searchable textbook covering Scratch, Python, desktop apps, 2D games, and web development."
 language = "en"
 src = "src"
 

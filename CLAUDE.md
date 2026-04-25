@@ -5,10 +5,13 @@ repository. Read it before doing anything else.
 
 ## What this project is
 
-A two-year programming curriculum for kids and teens (ages 9+) at Old
-Zion Hill church, taught by Eric Patton ("Mr. Eric" to students). The
-deliverable is a textbook compiled from per-session student handouts,
-plus matching teacher notes and lesson code.
+A programming curriculum (about 150 hours total — roughly 1-2 years
+depending on meeting frequency) for kids and teens (ages 9+), taught
+by Eric Patton ("Mr. Eric" to students). The original deployment is
+a weekly evening class at a local church, but the curriculum is
+designed to work in other settings too. The deliverable is a
+textbook compiled from per-session student handouts, plus matching
+teacher notes and lesson code.
 
 ## Read these first
 

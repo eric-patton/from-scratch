@@ -1,17 +1,19 @@
-# Old Zion Hill Programming Class
+# From Scratch
 
-A free programming curriculum for kids and teens at Old Zion Hill church,
-taught by Eric Patton on Wednesday nights. This repository contains the
-full curriculum: student handouts (which compile into a textbook),
+A free programming curriculum for kids and teens (ages 9+), originally
+built for a weekly class at a local church. This repository contains
+the full curriculum: student handouts (which compile into a textbook),
 teacher notes, lesson code, and supporting tooling.
 
 ## What this is
 
-A roughly two-year programming curriculum, designed for ages 9 and up,
+About 150 hours of curriculum content, designed for ages 9 and up,
 that takes students from no programming experience through Scratch,
 Python, desktop apps, 2D games, web development, and small web
-applications. The class is free for life — students keep their
-machines, and they can come back any time, even years later.
+applications. How long that takes depends on how often the class
+meets — roughly 1.5-2 years at one session per week, closer to a
+year at twice a week. The class is free for life — students keep
+their machines, and they can come back any time, even years later.
 
 The full curriculum design rationale lives in
 [`CURRICULUM-DECISIONS.md`](./CURRICULUM-DECISIONS.md).
@@ -61,11 +63,11 @@ Open the textbook at _(URL)_ or read the local copy on your machine. Each chapte
 
 ## For parents
 
-The textbook's [introduction](https://claude.ai/chat/src/for-parents.md) _(coming soon)_ explains what students will learn, when, and how. The class is free, runs Wednesday nights at Old Zion Hill, and is open to kids ages 9 and up.
+The textbook's [for-parents page](./src/for-parents.md) _(coming soon)_ explains what students will learn, when, and how. The class is free and open to kids ages 9 and up. Local logistics (where, when, who teaches) vary by instance.
 
 ## For other teachers / churches
 
-This curriculum is licensed permissively because the goal is for it to be useful beyond Old Zion Hill. Fork it, adapt it, run your own class. The only ask is attribution.
+This curriculum is licensed permissively because the goal is for it to be useful beyond the original church class. Fork it, adapt it, run your own class. The only ask is attribution.
 
 - **Textbook content:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - **Code (lesson code, scripts, tooling):** MIT
@@ -80,4 +82,4 @@ For now, this is primarily Eric's project, but corrections, typo fixes, and sugg
 
 Currently in active design. Phase 1 (Scratch) Session 1 is drafted; Sessions 2-9 are next. Curriculum is being written ahead of teaching, with adjustments planned after the first year of running it.
 
-See [`CURRICULUM-DECISIONS.md`](https://claude.ai/chat/CURRICULUM-DECISIONS.md) for the locked-in design decisions and open questions.
+See [`CURRICULUM-DECISIONS.md`](./CURRICULUM-DECISIONS.md) for the locked-in design decisions and open questions.

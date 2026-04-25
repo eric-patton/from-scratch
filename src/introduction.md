@@ -1,6 +1,7 @@
 # Introduction
 
-Welcome to the textbook for the Old Zion Hill programming class.
+Welcome to **From Scratch** — a free programming class for kids and
+teens, and the textbook that goes with it.
 
 This book is a record of everything we cover in class, written so you
 can read it on your own. Every chapter matches one class session. If
@@ -56,10 +57,11 @@ Two rules in this class:
 
 ## A note about the curriculum
 
-This book covers about two years of class, starting with Scratch
-and ending with small web applications you can run in a browser. You
-don't need to know anything to start. You don't need a computer at
-home — the class provides one and you keep it.
+This book covers about 150 hours of class — anywhere from one to two
+years, depending on how often your class meets. It starts with
+Scratch and ends with small web applications you can run in a
+browser. You don't need to know anything to start. You don't need a
+computer at home — most classes provide one for you to keep.
 
 If you're reading this years after taking the class and trying to
 remember how to do something, the search bar at the top of the site

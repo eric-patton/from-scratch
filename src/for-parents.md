@@ -2,10 +2,10 @@
 
 *This is a stub — a fuller version is coming.*
 
-The Old Zion Hill programming class is a free, two-year course for
-kids and teens (ages 9 and up) at Old Zion Hill church. We meet on
-Wednesday nights alongside Bible study. Eric Patton — "Mr. Eric" to
-the kids — teaches it.
+**From Scratch** is a free programming class for kids and teens
+(ages 9 and up). The full curriculum is about 150 hours of class
+time, which takes roughly one to two years depending on how often
+the class meets.
 
 ## What your child will learn
 
@@ -26,18 +26,19 @@ in the project's source repository.
 
 ## What it costs
 
-Nothing. The class is free, and your child keeps the computer they
-use in class. They can also come back to the class any time, even
-years later, with no cost.
+Free. Many local instances of From Scratch also provide computers
+that students keep — check with your local instructor.
 
 ## When and where
 
-Wednesday nights at Old Zion Hill, in the same time slot as Bible
-study. Sessions run roughly 90 minutes to 2 hours.
+Local logistics — meeting day, time, and venue — vary by class.
+Check with your local instructor for specifics.
 
 ## Questions
 
-For questions about the class, talk to Mr. Eric directly at church.
-For questions about the curriculum content (what's being taught, how,
-why), the [curriculum decisions document](https://github.com/eric-patton/from-scratch/blob/main/CURRICULUM-DECISIONS.md)
+For questions about your local class (logistics, scheduling, the
+teacher), contact the class directly.
+
+For questions about the curriculum content (what's being taught,
+how, why), the [curriculum decisions document](https://github.com/eric-patton/from-scratch/blob/main/CURRICULUM-DECISIONS.md)
 covers most of it.

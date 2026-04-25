@@ -1,7 +1,7 @@
-# Old Zion Hill Programming Class — Curriculum Decisions
+# From Scratch — Curriculum Decisions
 
-This document captures the design decisions made for the OZH programming class
-curriculum. It exists to:
+This document captures the design decisions made for the From Scratch
+programming curriculum. It exists to:
 
 1. Onboard future collaborators (including future-Eric) without re-deriving everything.
 2. Prime AI assistants (Claude Code, etc.) with project context.
@@ -16,7 +16,7 @@ add it here.
 
 - **Teacher:** Eric Patton ("Mr. Eric" to students). Principal software engineer,
   15+ years experience.
-- **Setting:** Old Zion Hill church, Wednesday nights, alongside Bible study.
+- **Setting:** Originally designed for a weekly evening class at a local church, alongside Bible study. Other deployment patterns (more or less frequent meetings, secular settings) are possible — the design assumes weekly 90-120 min sessions but the curriculum content doesn't.
 - **Students:** Kids and teens of the congregation. Recommended minimum age 9
   (needs reading/typing fluency for the post-Scratch transition).
 - **Cost:** Free. Students keep their machines forever; the class itself is
@@ -79,7 +79,11 @@ than "I can't do this."
 
 ## Curriculum arc
 
-Roughly 80-100 sessions total, ~2-2.5 years at one session per week.
+Roughly 80-100 sessions of 90-120 minutes each — about 150 hours of
+class time total. How long that takes depends on meeting frequency:
+~1.5-2 years at one session per week, closer to a year at twice a
+week. The curriculum is designed around the once-a-week cadence but
+adapts cleanly.
 
 | Phase | Topic | Sessions |
 |-------|-------|----------|
@@ -167,9 +171,62 @@ substantially better than year one.
 ## Repo layout
 
 ```
-
-ozh-programming/ ├── README.md ├── CURRICULUM-DECISIONS.md ← this file ├── book.toml ← mdBook config ├── LICENSE ├── .gitignore │ ├── src/ ← textbook source (mdBook convention) │ ├── SUMMARY.md ← table of contents, the curriculum spine │ ├── introduction.md │ ├── for-parents.md │ ├── for-students.md │ ├── phase-01-scratch/ │ ├── phase-02-turtle/ │ ├── phase-03-python-basics/ │ ├── phase-04-intermediate-python/ │ ├── phase-05-customtkinter/ │ ├── phase-06-pygame/ │ ├── phase-07-web/ │ ├── phase-08-flask/ │ └── appendices/ │ ├── getting-unstuck.md │ ├── reading-error-messages.md │ ├── glossary.md │ ├── keyboard-shortcuts.md │ ├── thonny-reference.md │ └── installing-on-your-own-computer.md │ ├── code/ ← lesson code (starter / exercises / solutions) │ └── phase-XX-name/ │ └── session-XX-name/ │ ├── starter/ │ ├── exercises/ │ └── solutions/ ← public, labeled clearly as spoilers │ ├── teacher/ ← Eric's prep notes, NOT published │ ├── README.md │ ├── phase-XX-name/ │ │ └── session-XX-notes.md │ └── policies/ │ ├── attendance.md │ ├── buddy-system.md │ └── showcase-rhythm.md │ ├── assets/ ← images / diagrams / screenshots │ └── phase-XX-name/ │ └── session-XX/ │ └── tools/ ← internal scripts ├── new-session.sh ← scaffolds new session files from templates └── build-book.sh
-
+from-scratch/
+├── README.md
+├── CURRICULUM-DECISIONS.md     ← this file
+├── CLAUDE.md                   ← orientation for AI assistants
+├── book.toml                   ← mdBook config
+├── LICENSE                     ← CC BY-SA 4.0 (textbook content)
+├── LICENSE-CODE                ← MIT (lesson code, scripts)
+├── .gitignore
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          ← build + deploy textbook to Pages
+│
+├── src/                        ← textbook source (mdBook convention)
+│   ├── SUMMARY.md              ← table of contents, the curriculum spine
+│   ├── introduction.md
+│   ├── for-parents.md
+│   ├── for-students.md
+│   ├── phase-01-scratch/
+│   ├── phase-02-turtle/
+│   ├── phase-03-python-basics/
+│   ├── phase-04-intermediate-python/
+│   ├── phase-05-customtkinter/
+│   ├── phase-06-pygame/
+│   ├── phase-07-web/
+│   ├── phase-08-flask/
+│   └── appendices/
+│       ├── getting-unstuck.md
+│       ├── reading-error-messages.md
+│       ├── glossary.md
+│       ├── keyboard-shortcuts.md
+│       ├── thonny-reference.md
+│       └── installing-on-your-own-computer.md
+│
+├── code/                       ← lesson code (starter / exercises / solutions)
+│   └── phase-XX-name/
+│       └── session-XX-name/
+│           ├── starter/
+│           ├── exercises/
+│           └── solutions/      ← public, labeled clearly as spoilers
+│
+├── teacher/                    ← teacher prep notes, NOT published
+│   ├── README.md
+│   ├── phase-XX-name/
+│   │   └── session-XX-notes.md
+│   └── policies/
+│       ├── attendance.md
+│       ├── buddy-system.md
+│       └── showcase-rhythm.md
+│
+├── assets/                     ← images, diagrams, screenshots
+│   └── phase-XX-name/
+│       └── session-XX/
+│
+└── tools/                      ← internal scripts
+    ├── new-session.sh          ← scaffolds new session files from templates
+    └── build-book.sh           ← wraps `mdbook build`
 ```
 
 ### Layout decisions
