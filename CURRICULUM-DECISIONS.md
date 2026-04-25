@@ -107,8 +107,12 @@ databases, Raspberry Pi/microcontrollers, a second language, etc.
 - **Phase 2 uses Python Turtle** as the bridge from Scratch to "real" Python.
   Stdlib, visual, runs on the W202NAs, real Python syntax.
 - **Eric will build a custom grid-world coding toy** in Phase 6 as a Pygame
-  project (lets motivated students build the kind of "code-to-move" puzzle
-  game they used in Phase 2, but as creators).
+  project. Originally Eric considered using a code-to-move grid-world as
+  the post-Scratch bridge, but Python Turtle won out for being simpler,
+  stdlib-only, and quicker to typing-real-Python. The grid-world idea
+  survives as a Phase 6 Pygame creation that motivated students can
+  build, extend, or write puzzles for — making them the *creators* of the
+  kind of toy they might have *used* on other coding-education sites.
 - **Functions/abstractions deferred to Python.** Scratch's custom blocks are
   clunky enough that the friction outweighs the benefit.
 - **Git introduced mid-Phase 4, local-only at first.** GitHub appears in
