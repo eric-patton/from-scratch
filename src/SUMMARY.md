@@ -35,6 +35,14 @@
 
 ---
 
+# Phase 3 — Python basics
+
+- [Phase 3 overview](phase-03-python-basics/README.md)
+- [Session 1: Welcome to Python (without the turtle)](phase-03-python-basics/session-01-welcome.md)
+- [Session 2: Variables and types](phase-03-python-basics/session-02-variables-and-types.md)
+
+---
+
 # Appendices
 
 - [Getting unstuck](appendices/getting-unstuck.md)
