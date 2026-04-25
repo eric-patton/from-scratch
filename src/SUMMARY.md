@@ -42,6 +42,8 @@
 - [Session 2: Variables and types](phase-03-python-basics/session-02-variables-and-types.md)
 - [Session 3: Strings — text in Python](phase-03-python-basics/session-03-strings.md)
 - [Session 4: Conditionals — combining decisions](phase-03-python-basics/session-04-conditionals-deeper.md)
+- [Session 5: Loops (deeper) and the Thonny debugger](phase-03-python-basics/session-05-loops-and-debugger.md)
+- [Session 6: Functions that return values](phase-03-python-basics/session-06-return-values.md)
 
 ---
 
