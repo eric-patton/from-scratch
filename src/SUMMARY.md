@@ -26,6 +26,8 @@
 - [Phase 2 overview](phase-02-turtle/README.md)
 - [Session 1: Welcome to Python — typing instead of dragging](phase-02-turtle/session-01-welcome.md)
 - [Session 2: Telling the turtle what to do](phase-02-turtle/session-02-sequences.md)
+- [Session 3: Loops in Python — `for` and `range`](phase-02-turtle/session-03-loops.md)
+- [Session 4: Functions — making your own commands](phase-02-turtle/session-04-functions.md)
 
 ---
 
