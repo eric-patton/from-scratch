@@ -21,6 +21,14 @@
 
 ---
 
+# Phase 2 — Python with Turtle
+
+- [Phase 2 overview](phase-02-turtle/README.md)
+- [Session 1: Welcome to Python — typing instead of dragging](phase-02-turtle/session-01-welcome.md)
+- [Session 2: Telling the turtle what to do](phase-02-turtle/session-02-sequences.md)
+
+---
+
 # Appendices
 
 - [Getting unstuck](appendices/getting-unstuck.md)
