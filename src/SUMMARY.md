@@ -72,6 +72,14 @@
 
 ---
 
+# Phase 5 — customtkinter (desktop apps)
+
+- [Phase 5 overview](phase-05-customtkinter/README.md)
+- [Session 1: Welcome to GUIs — your first window](phase-05-customtkinter/session-01-welcome.md)
+- [Session 2: Buttons and events](phase-05-customtkinter/session-02-buttons-and-events.md)
+
+---
+
 # Appendices
 
 - [Getting unstuck](appendices/getting-unstuck.md)
