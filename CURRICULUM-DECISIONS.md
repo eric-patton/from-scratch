@@ -483,6 +483,15 @@ doesn't feel lost" — not "identical experience."
   drafted** (Welcome/first window, Buttons + events, Inputs,
   Choices, Layouts + frames, Putting it together (todo app),
   Milestone Day 1, Milestone Day 2 + Demo)
+- **Phase 6 (Pygame 2D games) — all 14 sessions drafted**
+  (Welcome/frame loop, Drawing, Sprites, Movement, Collision,
+  Build Pong together, GitHub intro, Sound + music,
+  Sprite classes + groups, Grid-world intro, Grid-world
+  extending, Game state, Milestone Day 1, Milestone Day 2 +
+  Demo). **Note:** `grid_world.py` itself (the actual game
+  used in Sessions 10-11) is spec'd in the Session 10 teacher
+  notes but not yet built — needs ~1-2 hours before those
+  sessions can run.
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
 
