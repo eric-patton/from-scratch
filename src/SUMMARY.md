@@ -51,6 +51,7 @@
 - [Session 11: Reading and writing files](phase-03-python-basics/session-11-reading-files.md)
 - [Session 12: Hangman — a complete game](phase-03-python-basics/session-12-hangman.md)
 - [Session 13: Error handling — `try` and `except`](phase-03-python-basics/session-13-error-handling.md)
+- [Session 14: Putting it together — a text adventure](phase-03-python-basics/session-14-text-adventure.md)
 
 ---
 
