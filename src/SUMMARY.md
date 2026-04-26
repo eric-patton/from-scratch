@@ -66,6 +66,9 @@
 - [Session 4: A light intro to classes](phase-04-intermediate-python/session-04-classes.md)
 - [Session 5: Git — saving versions of your code](phase-04-intermediate-python/session-05-git-intro.md)
 - [Session 6: Git in practice — recovering and exploring](phase-04-intermediate-python/session-06-git-in-practice.md)
+- [Session 7: Testing — making sure your code works](phase-04-intermediate-python/session-07-testing.md)
+- [Session 8: Milestone project work day 1](phase-04-intermediate-python/session-08-milestone-day-1.md)
+- [Session 9: Milestone project work day 2 + demo day](phase-04-intermediate-python/session-09-milestone-day-2-and-demo.md)
 
 ---
 

@@ -475,6 +475,10 @@ doesn't feel lost" — not "identical experience."
   Number-guessing game, Lists, More lists, Dictionaries,
   File I/O, Hangman, Error handling, Text adventure,
   Milestone Day 1, Milestone Day 2 + Demo)
+- **Phase 4 (Intermediate Python + CLI + Git) — all 9 sessions
+  drafted** (Command line, Multi-file programs, Stdlib modules,
+  Light classes intro, Git intro, Git in practice, Testing,
+  Milestone Day 1, Milestone Day 2 + Demo)
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
 
