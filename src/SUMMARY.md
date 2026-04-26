@@ -46,6 +46,8 @@
 - [Session 6: Functions that return values](phase-03-python-basics/session-06-return-values.md)
 - [Session 7: Number-guessing game](phase-03-python-basics/session-07-number-guessing-game.md)
 - [Session 8: Lists — collections of values](phase-03-python-basics/session-08-lists.md)
+- [Session 9: More lists — patterns and slicing](phase-03-python-basics/session-09-more-lists.md)
+- [Session 10: Dictionaries — key-value pairs](phase-03-python-basics/session-10-dictionaries.md)
 
 ---
 
