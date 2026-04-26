@@ -64,6 +64,8 @@
 - [Session 2: Multi-file programs and your own modules](phase-04-intermediate-python/session-02-multi-file.md)
 - [Session 3: Standard library modules](phase-04-intermediate-python/session-03-stdlib-modules.md)
 - [Session 4: A light intro to classes](phase-04-intermediate-python/session-04-classes.md)
+- [Session 5: Git — saving versions of your code](phase-04-intermediate-python/session-05-git-intro.md)
+- [Session 6: Git in practice — recovering and exploring](phase-04-intermediate-python/session-06-git-in-practice.md)
 
 ---
 
