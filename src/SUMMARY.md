@@ -48,6 +48,9 @@
 - [Session 8: Lists — collections of values](phase-03-python-basics/session-08-lists.md)
 - [Session 9: More lists — patterns and slicing](phase-03-python-basics/session-09-more-lists.md)
 - [Session 10: Dictionaries — key-value pairs](phase-03-python-basics/session-10-dictionaries.md)
+- [Session 11: Reading and writing files](phase-03-python-basics/session-11-reading-files.md)
+- [Session 12: Hangman — a complete game](phase-03-python-basics/session-12-hangman.md)
+- [Session 13: Error handling — `try` and `except`](phase-03-python-basics/session-13-error-handling.md)
 
 ---
 
