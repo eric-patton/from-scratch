@@ -77,6 +77,9 @@
 - [Phase 5 overview](phase-05-customtkinter/README.md)
 - [Session 1: Welcome to GUIs — your first window](phase-05-customtkinter/session-01-welcome.md)
 - [Session 2: Buttons and events](phase-05-customtkinter/session-02-buttons-and-events.md)
+- [Session 3: Inputs — entries and text boxes](phase-05-customtkinter/session-03-inputs.md)
+- [Session 4: Choices — checkboxes, radio buttons, dropdowns](phase-05-customtkinter/session-04-choices.md)
+- [Session 5: Layouts and frames](phase-05-customtkinter/session-05-layouts.md)
 
 ---
 
