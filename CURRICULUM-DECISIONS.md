@@ -479,6 +479,10 @@ doesn't feel lost" — not "identical experience."
   drafted** (Command line, Multi-file programs, Stdlib modules,
   Light classes intro, Git intro, Git in practice, Testing,
   Milestone Day 1, Milestone Day 2 + Demo)
+- **Phase 5 (customtkinter desktop apps) — all 8 sessions
+  drafted** (Welcome/first window, Buttons + events, Inputs,
+  Choices, Layouts + frames, Putting it together (todo app),
+  Milestone Day 1, Milestone Day 2 + Demo)
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
 
