@@ -57,6 +57,14 @@
 
 ---
 
+# Phase 4 — Intermediate Python, the CLI, and Git
+
+- [Phase 4 overview](phase-04-intermediate-python/README.md)
+- [Session 1: The command line — your first `cd`, `ls`, `python`](phase-04-intermediate-python/session-01-command-line.md)
+- [Session 2: Multi-file programs and your own modules](phase-04-intermediate-python/session-02-multi-file.md)
+
+---
+
 # Appendices
 
 - [Getting unstuck](appendices/getting-unstuck.md)
