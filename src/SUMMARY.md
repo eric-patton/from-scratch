@@ -52,6 +52,8 @@
 - [Session 12: Hangman — a complete game](phase-03-python-basics/session-12-hangman.md)
 - [Session 13: Error handling — `try` and `except`](phase-03-python-basics/session-13-error-handling.md)
 - [Session 14: Putting it together — a text adventure](phase-03-python-basics/session-14-text-adventure.md)
+- [Session 15: Milestone project work day 1](phase-03-python-basics/session-15-milestone-day-1.md)
+- [Session 16: Milestone project work day 2 + demo day](phase-03-python-basics/session-16-milestone-day-2-and-demo.md)
 
 ---
 

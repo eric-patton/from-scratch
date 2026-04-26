@@ -469,6 +469,12 @@ doesn't feel lost" — not "identical experience."
 - **Phase 2 (Python with Turtle) — all 8 sessions drafted**
   (Welcome to Python, Turtle commands, Loops, Functions,
   Variables, Conditionals, Garden Scene, Milestone + Demo)
+- **Phase 3 (Python basics) — all 16 sessions drafted**
+  (Welcome/PB&J callback, Variables and types, Strings + f-strings,
+  Conditionals deeper, Loops + debugger, Return values,
+  Number-guessing game, Lists, More lists, Dictionaries,
+  File I/O, Hangman, Error handling, Text adventure,
+  Milestone Day 1, Milestone Day 2 + Demo)
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
 
