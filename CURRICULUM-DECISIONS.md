@@ -499,8 +499,25 @@ doesn't feel lost" — not "identical experience."
   Canvas, Canvas mini-game, Fetch + JSON, GitHub Pages,
   Milestone Day 1, Milestone Day 2 + Demo). **No CSS Grid**
   — Flexbox only per design call.
+- **Phase 8 (Flask web apps) — all 13 sessions drafted**
+  (Welcome to Flask, Routes + URL parameters, Templates,
+  Static + base templates, Forms + POST, Sessions + flash,
+  SQLite intro, Database in Flask, User accounts, Notes app
+  integration, Deployment to PythonAnywhere, Milestone Day 1,
+  Milestone Day 2 + Demo + curriculum close). Raw SQL with
+  `sqlite3` (no ORM); password hashing with
+  `werkzeug.security`.
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
+
+**The full curriculum is now drafted. 102 sessions across
+8 phases.** Outstanding items:
+- `grid_world.py` (the actual Pygame puzzle game used in
+  Phase 6 Sessions 10-11) is spec'd but not yet built —
+  needs ~1-2 hours.
+- 3 appendices remain as stubs (`reading-error-messages`,
+  `keyboard-shortcuts`, `thonny-reference`) — flagged for
+  fill-in around Phase 3 timing but never expanded.
 
 ### Open questions / future decisions
 

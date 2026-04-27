@@ -104,6 +104,8 @@
   - [Session 9: User accounts — signup, login, logout](phase-08-flask/session-09-user-accounts.md)
   - [Session 10: Build a notes app together](phase-08-flask/session-10-notes-app.md)
   - [Session 11: Deployment — your Flask app on the internet](phase-08-flask/session-11-deployment.md)
+  - [Session 12: Milestone project work day 1](phase-08-flask/session-12-milestone-day-1.md)
+  - [Session 13: Milestone project work day 2 + demo + curriculum close](phase-08-flask/session-13-milestone-day-2-and-demo.md)
 - [Appendices](appendices/README.md)
   - [Getting unstuck](appendices/getting-unstuck.md)
   - [Reading error messages](appendices/reading-error-messages.md)
