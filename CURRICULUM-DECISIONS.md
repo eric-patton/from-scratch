@@ -29,12 +29,21 @@ add it here.
 
 ## Hardware
 
-All students run **Linux Mint XFCE** on x86. Two tiers:
+All students run **Linux Mint XFCE** on x86. Three tiers:
 
-- **Standard tier:** Refurbished mini desktops (e.g., ThinkCentre M710q),
-  6th/7th-gen Intel i5, 8GB RAM, 256GB SSD.
-- **Free tier:** Three donated ASUS VivoBook W202NA laptops (Celeron N3350,
-  4GB RAM, eMMC). Underpowered — curriculum must accommodate them.
+- **Standard tier — mini desktop:** Refurbished mini desktops (e.g.,
+  ThinkCentre M710q), 6th/7th-gen Intel i5, 8GB RAM, 256GB SSD.
+  Entry point ~$150-$160; families who want more headroom can spec up
+  from there. Needs an existing monitor/keyboard/mouse (or donated
+  peripherals).
+- **Standard tier — laptop:** Refurbished business-class laptops
+  (typically ThinkPads), ~$200-$300 depending on generation and
+  condition. Self-contained — no peripherals needed. Preferred for
+  families without a spare monitor or who want the kid to take it
+  anywhere.
+- **Free tier:** Donated working laptops (e.g., the three ASUS
+  VivoBook W202NAs already in rotation — Celeron N3350, 4GB RAM,
+  eMMC). Underpowered — curriculum must accommodate them.
 
 Eric images all machines before day one with all tools pre-installed.
 Students never deal with installation friction during the curriculum.
@@ -499,18 +508,20 @@ doesn't feel lost" — not "identical experience."
   Canvas, Canvas mini-game, Fetch + JSON, GitHub Pages,
   Milestone Day 1, Milestone Day 2 + Demo). **No CSS Grid**
   — Flexbox only per design call.
-- **Phase 8 (Flask web apps) — all 13 sessions drafted**
+- **Phase 8 (Flask web apps) — all 14 sessions drafted**
   (Welcome to Flask, Routes + URL parameters, Templates,
   Static + base templates, Forms + POST, Sessions + flash,
   SQLite intro, Database in Flask, User accounts, Notes app
-  integration, Deployment to PythonAnywhere, Milestone Day 1,
-  Milestone Day 2 + Demo + curriculum close). Raw SQL with
-  `sqlite3` (no ORM); password hashing with
-  `werkzeug.security`.
+  foundation, Notes app polish + security demo, Deployment
+  to PythonAnywhere, Milestone Day 1, Milestone Day 2 +
+  Demo + curriculum close). Raw SQL with `sqlite3` (no ORM);
+  password hashing with `werkzeug.security`. The notes-app
+  build was split across two sessions to give the per-user
+  filter (`WHERE user_id = ?`) the room it deserves.
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
 
-**The full curriculum is now drafted. 102 sessions across
+**The full curriculum is now drafted. 103 sessions across
 8 phases.** Outstanding items:
 - `grid_world.py` (the actual Pygame puzzle game used in
   Phase 6 Sessions 10-11) is spec'd but not yet built —

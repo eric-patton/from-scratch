@@ -81,6 +81,42 @@ container. Pick one per container and stick with it.
 > layout in confusing ways. (You can use different ones in
 > different *frames*; we'll see frames next.)
 
+#### When you mix them anyway (the bug you'll write)
+
+This is the *one* mistake every Python GUI beginner makes.
+You start a project with `pack()`, switch over to `grid()`
+mid-file, and end up with something like:
+
+```python
+# DON'T do this — mixed pack and grid in the same window
+name_label = ctk.CTkLabel(app, text="Name:")
+name_label.pack(pady=5)               # ← pack
+
+name_entry = ctk.CTkEntry(app)
+name_entry.grid(row=1, column=1)      # ← grid
+```
+
+Run that. **The window hangs.** It looks like Python is
+frozen — it's not. Behind the scenes, customtkinter's layout
+engine is in an infinite back-and-forth: `pack` resizes the
+window, `grid` resizes it differently, repeat forever. You
+hit the red Stop button to escape.
+
+**Fix:** pick one geometry manager per container. To use
+`grid` for the form, change *every* `pack(...)` in that
+window to a `grid(row=..., column=...)`:
+
+```python
+name_label = ctk.CTkLabel(app, text="Name:")
+name_label.grid(row=0, column=0, padx=5, pady=5)   # ← grid
+
+name_entry = ctk.CTkEntry(app)
+name_entry.grid(row=1, column=1, padx=5, pady=5)   # ← grid
+```
+
+If your window ever hangs as soon as it opens, this is the
+first thing to check.
+
 #### A bigger grid
 
 Try a 3-column layout:

@@ -22,6 +22,16 @@ callback).
 - **Phase 6 Sessions 1, 4, 5** — frame loop,
   keyboard input, collision. **All directly
   transfers.**
+- **The Session 9 counter app** is the same shape
+  as a game, just slower: state lives in variables
+  (`count`), events change the state (button
+  clicks), and the screen is updated to match. A
+  game does the same thing 60 times a second:
+  state lives in variables (positions, score),
+  events change it (key presses + the frame
+  loop's tick), and the canvas is redrawn to
+  match. If you can build the counter from
+  memory, you can build today's game.
 
 ---
 

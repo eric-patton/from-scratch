@@ -1,25 +1,23 @@
 ## Session 12 — Teacher Notes
 
-*Phase 8, Flask · Session 12 of 13 · Title:
-Milestone project work day 1*
+*Phase 8, Flask · Session 12 of 14 · Title:
+Deployment — your Flask app on the internet*
 
 ### Purpose of this session
 
-Last milestone planning. Five jobs, in priority
-order:
+The "back-end goes public" session. Five jobs, in
+priority order:
 
-1. **Get every kid to a plan + a deployed URL
-   skeleton.** Both are non-negotiable for next
-   week's demo.
-2. **Triage scope ruthlessly.** Full-stack apps
-   over-scope easily.
-3. **Reinforce the deploy loop.** Code locally,
-   push to GitHub, pull on PythonAnywhere,
-   reload. Practice it today.
-4. **Per-user data discipline.** Every query
-   filters by user. Same lesson as Session 10.
-5. **Set up Session 13 (final demo +
-   curriculum close).**
+1. **Get every kid's notes app on a real URL.**
+   The single most important outcome.
+2. **Land "static hosting won't work for Flask."**
+   Python needs to run on a server.
+3. **Land the PythonAnywhere flow.** Account →
+   git clone → WSGI config → install → reload.
+4. **Land deploy-via-git-pull.** Update locally,
+   push, pull on server, reload.
+5. **Set up Sessions 12-13 (milestone).**
+   Milestone projects must be deployed.
 
 ### Before class
 
@@ -27,196 +25,279 @@ order:
 
 **Set up:**
 
-- Demo machine.
-- Seed list ready.
-- Triage list of "doesn't fit in two
-  sessions."
-- Verify each kid has GitHub + PythonAnywhere
-  setup before class. Kids who don't get help
-  now.
+- Demo machine with browser + Thonny + Flask.
+- Mr. Eric's own pre-deployed PythonAnywhere
+  notes app — to demo the URL working.
+- A walkthrough screenshot or pre-made guide for
+  the PythonAnywhere UI (the UI changes
+  occasionally — fresh screenshots help).
+- Each kid needs their notes app on GitHub
+  before class — verify in the days leading up.
+- Identify any kids missing GitHub setup or
+  whose notes app isn't ready.
 
-**Prep time:** ~15 minutes.
+**Prep time:** ~45 minutes — pre-deploy a fresh
+notes app, document any UI changes, identify
+problem kids.
 
 ### Timing and flow
 
-Total: ~90 min.
+Total: ~90 min — possibly tight given setup
+overhead.
 
 - **Welcome and recap** (~5 min). Recap Session
-  11 (deployment).
-- **Part A — Plan** (~15 min). 9 questions.
-  Mr. Eric reviews.
-- **Part A — Setup + initial deploy** (~15 min).
-- **Part A — Build the simplest version** (~50 min).
-- **Wrap-up** (~5 min). Each kid shares
-  idea + URL.
+  10. "Today: it goes public."
+- **Part A: PythonAnywhere account creation** (~10 min).
+- **Part A: git clone + web app + WSGI** (~30 min).
+- **Part A: install + reload + verify** (~15 min).
+- **Break** (~5 min).
+- **Part B: production polish** (~15 min).
+- **Wrap-up** (~10 min). URL share-around.
 
-The 50-minute build is the heart. Roam.
+If running short, **drop production polish.** The
+URL working is the priority.
 
-### Teaching the planning step
+### Teaching the framing
 
-#### 9 questions vs 8
+#### "GitHub Pages won't work"
 
-Phase 8 adds:
+Open with the contrast:
 
-- **Question 5: Database tables.** Forces them
-  to think about data structure up front.
-- **Question 6: Routes.** Lists all URLs they'll
-  need.
-
-Both are non-negotiable for a Flask app.
-
-#### Triage: things that won't fit
-
-When a kid shows you the plan, listen for:
-
-- **Real-time chat / live updates.** Needs
-  WebSockets — out of scope.
-- **Image / file uploads** beyond the basics.
-  Possible but fiddly.
-- **Email notifications.** Needs SMTP setup.
-- **OAuth login** (sign in with Google). Real
-  apps do this; setup is involved.
-- **Payments.** Stripe integration is real
-  work.
-- **Mobile native apps.** Web only.
-- **Real-time collaboration.** Operational
-  Transform / CRDTs — way too much.
-- **Sophisticated search.** Full-text search
-  with Postgres or Elasticsearch — out of
-  scope. SQLite `LIKE` is fine.
-
-Things that *do* fit:
-
-- Multi-table apps with auth.
-- CRUD on user-owned items.
-- Search/filter with `LIKE`.
-- Public/private content modes.
-- Simple admin or moderation.
-- Class-friendly multi-user apps.
-
-#### Common over-scope: "I'll have AI features"
-
-> "AI APIs need API keys, cost money, and the
-> code is mostly the API call (which we know
-> from Phase 7's fetch). For class: skip. Build
-> something else; explore AI APIs after the
-> curriculum if you want."
-
-#### Common over-scope: "I'll deploy a real
-   product"
-
-> "Real products need lots more — moderation,
-> abuse handling, terms of service, privacy
-> policy, GDPR for EU users, scaling. *Way*
-> beyond what fits in two sessions.
+> "Phase 7 — your sites went on GitHub Pages.
+> Free, easy, instant. *But* GitHub Pages is
+> *static* — it serves files. Your Flask app
+> needs *Python running on a server*. GitHub
+> Pages can't do that.
 >
-> *For class*: build something fun, demo to
-> classmates, that's enough. If you want to
-> launch a real product later, the foundation
-> here gets you started."
+> We need a Python *host* — a service where your
+> app actually runs. Several options. We'll use
+> PythonAnywhere — free, beginner-friendly,
+> designed for educators."
 
-#### Encourage borrowing
+#### "PythonAnywhere is the gentlest entry"
 
-A kid building a notes-app variant with their
-own theme? **Encouraged.** A different domain
-(recipes, books, journal entries) but the same
-shape? **Perfect.** Variations on Session 10
-are great milestones.
+Brief landscape:
 
-### Teaching the build step
-
-#### "Deploy on day 1"
-
-Push every kid:
-
-> "Push your skeleton to GitHub *today*. Deploy
-> to PythonAnywhere *today*. Even if it's just
-> 'Hello world' or signup-only.
+> "Real production: Render, Fly.io, Railway, AWS,
+> DigitalOcean, Heroku (rip free tier). All
+> require terminal/CLI familiarity, often
+> Docker, often credit cards.
 >
-> Why? *Deployment issues are the worst at the
-> last minute.* If your URL works today, all
-> your future commits are 'just push.' If you
-> wait, the night before demo you're scrambling
-> with WSGI configs."
+> PythonAnywhere has a *web UI* for everything.
+> Free tier no credit card. Designed for
+> students. *Perfect for class.*
+>
+> When you grow into bigger apps, you'll
+> graduate to other hosts. Today: PythonAnywhere."
 
-This is real CI/CD discipline. Worth instilling.
+### Teaching Part A
 
-#### Roaming priorities
+#### Account creation
 
-1. **Plan triage** — first 15 minutes.
-2. **Deploy verification** — next 15.
-3. **Code support** — bulk of session.
+Walk through on the projector. Most kids manage.
+The Beginner tier (free) requires:
 
-Get every kid past the deploy hurdle before
-moving to code questions.
+- Username (becomes part of URL — pick wisely)
+- Email
+- Password
+- Email verification
 
-#### When a kid's app crashes on PythonAnywhere
+Some kids may hit:
 
-Walk through:
+- Username taken (try variants)
+- Verification email delayed (gmail usually
+  fast; some school emails slower)
+- Already have an account from another class
+  (use it)
 
-1. **Error log** — Web tab, "Server log"
-   link.
-2. **Trace the error** — usually missing
-   import or missing module.
-3. **Fix locally**, push, pull, reload.
+Have a fallback plan for the kid whose email
+verification doesn't arrive.
 
-The error-log → fix → reload loop is real
-production debugging.
+#### Bash console + git clone
+
+Show the **Consoles** tab. Start a Bash console.
+
+```
+$ git clone https://github.com/USERNAME/notes_app.git
+```
+
+Verify with `ls`. Walk through the standard "is
+the repo public, public URL correct, etc."
+checks.
+
+For private repos: PythonAnywhere supports
+deploy keys but it's a hassle. Push for public
+repos for class.
+
+#### Web app setup
+
+Walk through the wizard:
+
+1. Web tab → Add a new web app.
+2. Domain: free option.
+3. **Manual configuration** (don't pick "Flask"
+   — it's an old setup).
+4. Python 3.10 (or latest).
+
+Slow down. UI clicks aren't obvious without
+visual guidance.
+
+#### WSGI file editing
+
+This is the trickiest moment. The WSGI file
+controls how PythonAnywhere finds your app.
+
+```python
+import sys
+import os
+
+project_home = "/home/YOUR-USERNAME/notes_app"
+if project_home not in sys.path:
+    sys.path.insert(0, project_home)
+
+os.chdir(project_home)
+
+from app import app as application
+```
+
+Walk through every line:
+
+- **`project_home`** — must be the *exact* path
+  where they cloned. Use their username.
+- **`sys.path.insert`** — Python's import path.
+  Without it, `from app import app` fails.
+- **`os.chdir`** — sets current directory. Why?
+  So `sqlite3.connect("notes.db")` finds the DB
+  file. (Better fix: absolute path in the
+  notes_app — Part B.)
+- **`from app import app as application`** —
+  imports the Flask app, renames to
+  `application` (PythonAnywhere's expected
+  name).
+
+Each kid edits *their own* WSGI file with their
+own username and project name. Common mistake:
+copy-pasting Mr. Eric's username.
+
+#### `pip install --user flask`
+
+In bash console:
+
+```
+$ pip install --user flask
+```
+
+The `--user` flag is essential. Without it,
+PythonAnywhere may complain about permissions.
+
+Some kids' notes apps may need other packages
+(e.g., `flask-wtf` if they used WTForms). Each
+gets installed similarly.
+
+#### Reload + visit URL
+
+Reload button in Web tab. Wait 5-10 seconds.
+Visit the URL.
+
+**The URL working** = the moment of truth.
+Common failure modes:
+
+- Error page → "Something went wrong" →
+  inspect the error log (link in Web tab).
+- 502 Bad Gateway → app crashed on startup,
+  see error log.
+- 404 → wrong URL, or app didn't bind.
+
+The error log shows traces. Walk through.
+
+#### "Send the URL to your parents"
+
+Some kids will instantly want to. Encourage —
+real ownership.
+
+### Teaching Part B
+
+#### Production polish (briefly)
+
+Cover:
+
+- **Real `secret_key`** from env var.
+- **Absolute path** for database.
+- **`requirements.txt`** for deps.
+- **`.gitignore`** for `*.db`.
+
+Frame:
+
+> "Real production polish. Class-version works
+> as-is, but these are habits worth forming."
+
+If running short, mention briefly and skip
+hands-on for some.
 
 ### Common stumbles
 
-- **Plan too ambitious.** Triage at review.
-- **No GitHub setup.** Catch up. Phase 6
-  Session 7 + Session 11.
-- **No PythonAnywhere account.** Sign up now.
-- **Database file committed accidentally.**
-  Add to `.gitignore`, `git rm --cached`.
-- **`secret_key` hardcoded "dev-secret."**
-  Fine for class; mention env vars.
-- **Forgot per-user filter.** Walk through
-  Session 10 lesson.
-- **Deploy works, app crashes on first
-  request.** Probably DB path issue. Use
-  `__file__`-relative path.
-- **Forms broken on deployed app.**
-  `methods=["GET", "POST"]` missing.
-- **Static files 404 on deployed app.**
-  PythonAnywhere static-files mapping in
-  Web tab.
-- **Migration mid-session** — if they change
-  the schema, the deployed DB needs `ALTER
-  TABLE` or recreation.
+- **GitHub repo private.** Public is needed for
+  free PythonAnywhere git clone. Make public.
+- **Wrong username in WSGI.** Imports fail.
+  Fix the path.
+- **`from app import app` fails.** Wrong file
+  name or path. Check `ls` in the bash
+  console, verify `app.py` is in
+  `~/notes_app/`.
+- **`flask` not installed.** ImportError. `pip
+  install --user flask`.
+- **DB file path wrong.** SQLite errors. Use
+  absolute path (Part B fix).
+- **Error log shows secret_key error.** Forgot
+  `app.secret_key` in code. Add it.
+- **Reload doesn't take effect.** Browser cache.
+  Hard reload, or clear and try.
+- **First reload takes a long time.** Normal —
+  PythonAnywhere wakes the worker.
+- **App works once, then errors.** Maybe DB
+  file permissions. Check error log.
+- **Static files (CSS) 404.** PythonAnywhere
+  serves them via the web UI's "Static files"
+  section in the Web tab. Set the URL
+  `/static/` to map to `/home/USER/PROJECT/static/`.
 
 ### Differentiation
 
-- **Younger kids (9-10):** Pick a simpler
-  idea — habit tracker, reading log, bookmark
-  manager. Goal: signup + add-and-list
-  working at a URL.
-- **Older kids (12+):** Push for full CRUD
-  + at least one bonus.
-- **Advanced (any age):** Push for multi-table
-  + search + public mode + polished CSS.
-- **Struggling:** A kid who can't write the
-  plan is the kid you focus on. Walk through
-  the 9 questions together.
+- **Younger kids (9-10):** Goal is the URL
+  working. Skip Part B polish.
+- **Older kids (12+):** Push for Part B basics
+  — `secret_key` from env, absolute DB path.
+- **Advanced (any age):** Suggest:
+  - Try a different host (Render or Fly.io)
+  - Custom domain
+  - HTTPS-only redirect
+  - Logging to file
+  - Disable signup (closed app)
+- **Struggling:** A kid who can't get the URL
+  working is the kid you focus on. Most common
+  cause: WSGI typo, or repo on GitHub is
+  private/missing.
 
 ### What to watch for
 
-- **Plans too ambitious.** Spot at review.
-- **Kids who plan and never deploy.** Cut
-  planning short. Get to deploy.
-- **Buddies signing up for each other's
-  in-progress apps.** Real testing. Encourage.
-- **Excitement about real users.** "My friends
-  can use this?" Yes.
-- **Frustration with deployment errors.**
-  Patience. Walk through error logs.
-- **Kids deploying before pushing.** Verify
-  the deploy reflects their latest code.
-- **Last-session energy.** Some kids might
-  feel "we're almost done!" — channel into
-  finishing strong.
+- **The "MY URL!" reaction.** Real, big.
+- **Buddies signing up for each other's apps.**
+  Real multi-user testing. Encourage.
+- **Privacy concerns** — apps now have *real*
+  signups. Address sensitively. Apps can be
+  taken down.
+- **Excitement about parents using it.** "Can
+  they really sign up?" Yes.
+- **Frustration with WSGI.** Expected. Walk
+  through patiently.
+- **Static files broken.** Common — needs the
+  Web tab static-files mapping.
+- **Cross-app spam.** Some kids might create
+  spam accounts on each other's apps. Address
+  if it happens — community-management lesson.
+- **Kid asking "what about HTTPS?"**
+  PythonAnywhere provides it free at
+  `<username>.pythonanywhere.com`. Real.
 
 ### After class
 
@@ -230,26 +311,33 @@ then.)*
 
 ### Connections forward
 
-- **Session 13 (final demo + curriculum
-  close).** Today's project becomes their
-  final demo at a real URL.
-- **Phase 7 callback:** they have a personal
-  homepage. Cross-link to this Flask app
-  for a unified portfolio.
-- **Career-long callback:** the deploy-via-
-  push workflow is real software engineering.
+- **Sessions 12-13 (milestone).** Their
+  milestone goes live by demo. Today's deploy
+  skill is required.
+- **Career-long callback:** real apps deploy.
+  Real engineers do this constantly.
+  Different hosts, same flow (clone, configure,
+  install, run).
+- **Phase 7 callback:** their static sites are
+  on GitHub Pages. Their Flask apps are on
+  PythonAnywhere. Different hosts for different
+  needs.
 - **Peanut butter callback opportunity:** the
-  forgot-to-pull-on-PythonAnywhere bug — code
-  on GitHub is updated, but the URL still
-  shows old version. Precision: deploy is a
-  separate step.
+  WSGI typo or wrong-username path is a
+  precision moment. Server does what you said,
+  not what you meant.
 
 ### Materials checklist
 
-- [ ] Demo machine
-- [ ] Seed list
-- [ ] Triage list
-- [ ] Pre-class verification of GitHub +
-      PythonAnywhere accounts
+- [ ] Demo machine with browser + Thonny
+- [ ] Mr. Eric's example deployed app to demo
+- [ ] PythonAnywhere account ready for demo
+- [ ] Pre-class email to parents about
+      PythonAnywhere account creation (if
+      needed for younger kids)
+- [ ] Visual walkthrough or screenshots of
+      PythonAnywhere UI (UI changes!)
+- [ ] List of kids whose notes apps aren't on
+      GitHub yet — fix before class
 - [ ] Projector
 - [ ] Class roster

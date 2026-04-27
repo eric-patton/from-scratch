@@ -305,7 +305,7 @@ This frames "why have a back-end" cleanly.
 - **Buddies showing each other their pages on each
   other's URLs** (won't work — localhost is
   per-machine). Mention this; deployment in
-  Session 11 fixes it.
+  Session 12 fixes it.
 - **Kids excited about JSON** — "I can build my
   own API?" Yes.
 - **Frustration with HTML-in-Python ugliness.** Yes.
@@ -317,7 +317,7 @@ This frames "why have a back-end" cleanly.
   full-stack split.
 - **Kids thinking the URL is shareable** —
   reassure: "this is just on your machine.
-  Session 11 makes it public."
+  Session 12 makes it public."
 
 ### After class
 
@@ -337,7 +337,7 @@ then.)*
   strings" gets fixed.
 - **Session 5 (forms).** The browser can *send
   data* via POST. Server processes.
-- **Session 11 (deployment).** The local server
+- **Session 12 (deployment).** The local server
   becomes a public URL.
 - **Phase 7 callback:** their `fetch` calls
   could hit a Flask server they wrote. Full-stack

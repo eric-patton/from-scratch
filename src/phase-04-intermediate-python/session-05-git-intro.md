@@ -71,6 +71,11 @@ $ git config --global user.email
 you@example.com
 ```
 
+(If your name was already set by a parent or a previous
+class, running these commands again just updates the value.
+No harm done. Git is happy to be told what its name is over
+and over.)
+
 #### Create a project to track
 
 Open a terminal. Make a new folder for today's work:

@@ -1,334 +1,256 @@
 ## Session 13 — Teacher Notes
 
-*Phase 8, Flask · Session 13 of 13 — final
-session of the entire curriculum · Title:
-Milestone day 2 + demo + curriculum close*
+*Phase 8, Flask · Session 13 of 14 · Title:
+Milestone project work day 1*
 
 ### Purpose of this session
 
-Last session ever. Five jobs, in priority order:
+Last milestone planning. Five jobs, in priority
+order:
 
-1. **Get every kid's milestone live and
-   demoable.** Public URL, working signup, basic
-   features.
-2. **Run the demos with gravity.** Not just
-   another demo — the *capstone*. Audience signs
-   up live.
-3. **Close out the curriculum properly.** Eight
-   phases, eight milestones. Real arc. Match the
-   moment.
-4. **Frame "what's next."** Not the end of
-   programming — the beginning of *their*
-   programming life. Direction without
-   prescription.
-5. **Make it memorable.** This is the moment
-   they'll remember.
+1. **Get every kid to a plan + a deployed URL
+   skeleton.** Both are non-negotiable for next
+   week's demo.
+2. **Triage scope ruthlessly.** Full-stack apps
+   over-scope easily.
+3. **Reinforce the deploy loop.** Code locally,
+   push to GitHub, pull on PythonAnywhere,
+   reload. Practice it today.
+4. **Per-user data discipline.** Every query
+   filters by user. Same lesson as Sessions
+   10-11.
+5. **Set up Session 14 (final demo +
+   curriculum close).**
 
 ### Before class
 
-**Bring:**
-
-- Optional: certificates, small celebration items,
-  a group photo plan.
-- Optional: a printed "every kid's 8 milestones"
-  recap sheet.
+**Bring:** nothing physical.
 
 **Set up:**
 
 - Demo machine.
-- Projector ready for URLs and DB Browser.
-- Each kid's expected URL pre-tested in the days
-  before.
-- Phase 9 talking points (career directions,
-  framework recommendations).
-- A short "from Mr. Eric" note ready (1-2
-  minutes, sincere, specific).
+- Seed list ready.
+- Triage list of "doesn't fit in two
+  sessions."
+- Verify each kid has GitHub + PythonAnywhere
+  setup before class. Kids who don't get help
+  now.
 
-**Prep time:** ~45 minutes — including pre-
-testing all URLs and identifying any kid whose
-demo is at risk.
+**Prep time:** ~15 minutes.
 
 ### Timing and flow
 
-Total: ~120 min — *let it run long.* Build in
-buffer for celebration.
+Total: ~90 min.
 
-- **Welcome and recap** (~5 min). "This is the
-  last session."
-- **Part A — Final polish** (~30 min). URL
-  verification, polish, push.
-- **Part B — Demo day** (~50 min). 5-7 min per
-  kid (longer than usual).
-- **Curriculum close** (~25 min). Recap of all
-  phases, frame "what's next," personal note,
-  celebration.
-- **Optional group activity** (~10 min). Photo,
-  food, reflection.
+- **Welcome and recap** (~5 min). Recap Session
+  11 (deployment).
+- **Part A — Plan** (~15 min). 9 questions.
+  Mr. Eric reviews.
+- **Part A — Setup + initial deploy** (~15 min).
+- **Part A — Build the simplest version** (~50 min).
+- **Wrap-up** (~5 min). Each kid shares
+  idea + URL.
 
-### Teaching the framing
+The 50-minute build is the heart. Roam.
 
-#### "Last session"
+### Teaching the planning step
 
-Open clearly:
+#### 9 questions vs 8
 
-> "This is the *last session* of the From Scratch
-> Programming Class. Eight phases. Today we
-> finish your eighth project. You demo. Then we
-> close out the journey we started together.
+Phase 8 adds:
+
+- **Question 5: Database tables.** Forces them
+  to think about data structure up front.
+- **Question 6: Routes.** Lists all URLs they'll
+  need.
+
+Both are non-negotiable for a Flask app.
+
+#### Triage: things that won't fit
+
+When a kid shows you the plan, listen for:
+
+- **Real-time chat / live updates.** Needs
+  WebSockets — out of scope.
+- **Image / file uploads** beyond the basics.
+  Possible but fiddly.
+- **Email notifications.** Needs SMTP setup.
+- **OAuth login** (sign in with Google). Real
+  apps do this; setup is involved.
+- **Payments.** Stripe integration is real
+  work.
+- **Mobile native apps.** Web only.
+- **Real-time collaboration.** Operational
+  Transform / CRDTs — way too much.
+- **Sophisticated search.** Full-text search
+  with Postgres or Elasticsearch — out of
+  scope. SQLite `LIKE` is fine.
+
+Things that *do* fit:
+
+- Multi-table apps with auth.
+- CRUD on user-owned items.
+- Search/filter with `LIKE`.
+- Public/private content modes.
+- Simple admin or moderation.
+- Class-friendly multi-user apps.
+
+#### Common over-scope: "I'll have AI features"
+
+> "AI APIs need API keys, cost money, and the
+> code is mostly the API call (which we know
+> from Phase 7's fetch). For class: skip. Build
+> something else; explore AI APIs after the
+> curriculum if you want."
+
+#### Common over-scope: "I'll deploy a real
+   product"
+
+> "Real products need lots more — moderation,
+> abuse handling, terms of service, privacy
+> policy, GDPR for EU users, scaling. *Way*
+> beyond what fits in two sessions.
 >
-> *No pressure*."
+> *For class*: build something fun, demo to
+> classmates, that's enough. If you want to
+> launch a real product later, the foundation
+> here gets you started."
 
-(Light. They've earned levity.)
+#### Encourage borrowing
 
-### Teaching Part A — final polish
+A kid building a notes-app variant with their
+own theme? **Encouraged.** A different domain
+(recipes, books, journal entries) but the same
+shape? **Perfect.** Variations on the
+Sessions 10-11 notes app are great milestones.
 
-#### URL verification first
+### Teaching the build step
 
-Walk past every kid in the first 10 minutes:
+#### "Deploy on day 1"
 
-> "Open your URL on your machine. Does it work?
-> Does signup work? Did you remember to push
-> *and* pull *and* reload?"
+Push every kid:
 
-Common failures:
-
-- Pushed but didn't pull on PythonAnywhere.
-- Pulled but didn't reload.
-- App crashes on signup (database file
-  permissions, missing column, etc.).
-- 500 errors — check error log.
-
-Triage *now.* Not at demo time.
-
-#### Production polish quick wins
-
-For the polish-minded:
-
-- **`secret_key` from env var.**
-- **`.gitignore`** for `*.db`.
-- **README** with description + URL.
-- **`requirements.txt`**.
-- **Window title.**
-
-If running short, skip these. Working app is
-the priority.
-
-#### Buddy URL test — the multi-user moment
-
-Buddies sign up on each other's apps. **Real
-multi-user testing.** Each kid sees their app
-populate with other users' data.
-
-> "*Their data joins yours in your database.*
-> You're now hosting real users."
-
-Pause for that.
-
-### Teaching Part B — demo day
-
-#### Set the celebratory tone
-
-> "Today is bigger than usual. You've shipped
-> *eight projects.* Today's demo is the
-> capstone.
+> "Push your skeleton to GitHub *today*. Deploy
+> to PythonAnywhere *today*. Even if it's just
+> 'Hello world' or signup-only.
 >
-> Show your URL. Sign up live as me. Use the
-> app. Have classmates sign up. Show your
-> repo. Tell us what was hard.
->
-> *Take your time.* This is the last demo."
+> Why? *Deployment issues are the worst at the
+> last minute.* If your URL works today, all
+> your future commits are 'just push.' If you
+> wait, the night before demo you're scrambling
+> with WSGI configs."
 
-Allow 5-7 minutes per kid (vs. usual 3-5).
+This is real CI/CD discipline. Worth instilling.
 
-#### Demo format
+#### Roaming priorities
 
-Phase 8 demo:
+1. **Plan triage** — first 15 minutes.
+2. **Deploy verification** — next 15.
+3. **Code support** — bulk of session.
 
-1. URL on projector.
-2. **Sign up live as Mr. Eric** (or someone
-   fresh).
-3. Use the app — show all features.
-4. **A classmate signs up on their machine**
-   during the demo.
-5. Show GitHub repo + git log.
-6. Show database structure if interesting.
-7. Hard thing + question.
+Get every kid past the deploy hurdle before
+moving to code questions.
 
-Encourage the audience to engage:
+#### When a kid's app crashes on PythonAnywhere
 
-> "Be active demo audiences. Try their apps on
-> your machine. Ask questions. *This is what
-> launching software looks like* — your peers
-> using your work."
+Walk through:
 
-#### What to ask each kid
+1. **Error log** — Web tab, "Server log"
+   link.
+2. **Trace the error** — usually missing
+   import or missing module.
+3. **Fix locally**, push, pull, reload.
 
-Specific to their project. After demos so many
-phases, you know each kid. Ask:
+The error-log → fix → reload loop is real
+production debugging.
 
-- "What was the hardest bug?"
-- "Which Phase 8 concept clicked best?"
-- "What feature would you add with another
-  week?"
-- "How does this compare to your Phase 5
-  customtkinter app — better, worse, same?"
-- "Are you going to keep using this?"
+### Common stumbles
 
-#### After all demos
+- **Plan too ambitious.** Triage at review.
+- **No GitHub setup.** Catch up. Phase 6
+  Session 7 + Session 12.
+- **No PythonAnywhere account.** Sign up now.
+- **Database file committed accidentally.**
+  Add to `.gitignore`, `git rm --cached`.
+- **`secret_key` hardcoded "dev-secret."**
+  Fine for class; mention env vars.
+- **Forgot per-user filter.** Walk through
+  Sessions 10-11 lesson.
+- **Deploy works, app crashes on first
+  request.** Probably DB path issue. Use
+  `__file__`-relative path.
+- **Forms broken on deployed app.**
+  `methods=["GET", "POST"]` missing.
+- **Static files 404 on deployed app.**
+  PythonAnywhere static-files mapping in
+  Web tab.
+- **Migration mid-session** — if they change
+  the schema, the deployed DB needs `ALTER
+  TABLE` or recreation.
 
-Each kid: brief, specific acknowledgment.
-Mention what they did *across the curriculum*
-if you can — "you started in Phase 1 with the
-peanut butter problem; today you're shipping
-multi-user apps."
+### Differentiation
 
-That continuity matters.
-
-### Teaching the curriculum close
-
-#### Recap of all phases
-
-Walk through the 8-phase arc:
-
-> "Let's count what you did:
->
-> - **Phase 1** — Scratch. Sequences, loops,
->   events. Visual programming.
-> - **Phase 2** — Python Turtle. Same ideas,
->   real syntax.
-> - **Phase 3** — Python basics. Strings, lists,
->   dicts, files. Real Python.
-> - **Phase 4** — CLI + Git. Multi-file programs,
->   classes, version control.
-> - **Phase 5** — customtkinter. Desktop GUIs.
-> - **Phase 6** — Pygame. Real games.
-> - **Phase 7** — Web. HTML, CSS, JavaScript.
-> - **Phase 8** — Flask. Back-end. Today.
->
-> *Eight phases. Eight projects shipped.* Most
-> adults have shipped zero. You have eight."
-
-The arc framing matters. Make it concrete.
-
-#### "Three on the internet"
-
-> "Three of your projects are on the internet
-> right now. Your Phase 7 homepage. Your Phase
-> 7 milestone. And — today — your Phase 8 app
-> with real users."
-
-That's *real* shipping. Beyond what most
-working programmers had at their age.
-
-#### Frame "what's next"
-
-Not prescriptive. Suggestive:
-
-- **Keep building.** The single best growth
-  path.
-- **Open source.** Read others' code; try
-  contributing.
-- **Frameworks** — React, Django, etc. when
-  they want.
-- **Specialties** — web, mobile, games, data,
-  systems. Pick by curiosity.
-- **Outside-programming skills** — make you a
-  better engineer.
-
-The handout's "What's next" section covers
-this. Read aloud parts that resonate.
-
-#### A personal note from Mr. Eric
-
-Speak from the heart:
-
-- What you saw them grow through.
-- One specific moment per kid (if you can).
-- "You earned this."
-- "Keep building."
-- "Come back if you want help with something
-  new."
-
-This is the moment. Don't rush.
-
-#### Celebration
-
-- Group photo (with permission).
-- Snacks if appropriate.
-- Stickers, certificates, whatever feels
-  right for the group.
-- Each kid says one thing they're proud of, or
-  one favorite project across all 8.
-
-### Common stumbles (still happen on the last
-day)
-
-- **URL down on demo day.** Triage to working
-  state.
-- **Forgot to pull on PythonAnywhere.** Pull,
-  reload.
-- **App crash on signup.** Quick fix or roll
-  back.
-- **Empty repo.** Push everything.
-- **Demo nerves.** Pair with a buddy if
-  needed.
-- **Long-winded demos.** Politely pace.
-- **Kids comparing themselves to each other.**
-  Reframe: "Both shipped. Both work. Both are
-  yours."
+- **Younger kids (9-10):** Pick a simpler
+  idea — habit tracker, reading log, bookmark
+  manager. Goal: signup + add-and-list
+  working at a URL.
+- **Older kids (12+):** Push for full CRUD
+  + at least one bonus.
+- **Advanced (any age):** Push for multi-table
+  + search + public mode + polished CSS.
+- **Struggling:** A kid who can't write the
+  plan is the kid you focus on. Walk through
+  the 9 questions together.
 
 ### What to watch for
 
-- **The "I'm a programmer" moment.** Some kids
-  realize it during their demo. Some during the
-  recap. Real shift in self-image.
-- **Buddies signing up enthusiastically.**
-  Encourage.
-- **Quiet pride.** Some kids won't say much
-  but will be visibly satisfied.
-- **The "what now?" question.** Real.
-  Reassure: programming has no end.
-- **Tears.** Possible. Last-day-of-something
-  emotions are real for some kids.
-- **Parent attendance.** If parents come for
-  the final demo, weave them in. Their kid
-  shipped real software.
-- **Your own emotions.** This is a year+ of
-  your life. It's OK to feel it.
+- **Plans too ambitious.** Spot at review.
+- **Kids who plan and never deploy.** Cut
+  planning short. Get to deploy.
+- **Buddies signing up for each other's
+  in-progress apps.** Real testing. Encourage.
+- **Excitement about real users.** "My friends
+  can use this?" Yes.
+- **Frustration with deployment errors.**
+  Patience. Walk through error logs.
+- **Kids deploying before pushing.** Verify
+  the deploy reflects their latest code.
+- **Last-session energy.** Some kids might
+  feel "we're almost done!" — channel into
+  finishing strong.
 
 ### After class
 
-*(Last "After class" of the curriculum. Use it.)*
+*(Leave this section blank until after the session. Fill in
+then.)*
 
-- What was the most important moment of the
-  curriculum?
-- Which kid's growth was most significant?
-- What would you do differently for the next
-  cohort?
-- What follow-up is needed for any kid?
-- Stay in touch with these kids. They were
-  yours for a year.
+- What worked / didn't:
+- Timing surprises:
+- Specific kids to follow up with:
+- Adjustments for next year:
 
 ### Connections forward
 
-- **No formal Phase 9.**
-- **For Mr. Eric:** future cohorts. Same arc,
-  refined.
-- **For students:** their own programming
-  journeys.
-- **For the curriculum:** updates as
-  technologies shift, as you learn what works.
-- **Career-long callback:** you taught them to
-  build. The rest unfolds.
+- **Session 14 (final demo + curriculum
+  close).** Today's project becomes their
+  final demo at a real URL.
+- **Phase 7 callback:** they have a personal
+  homepage. Cross-link to this Flask app
+  for a unified portfolio.
+- **Career-long callback:** the deploy-via-
+  push workflow is real software engineering.
+- **Peanut butter callback opportunity:** the
+  forgot-to-pull-on-PythonAnywhere bug — code
+  on GitHub is updated, but the URL still
+  shows old version. Precision: deploy is a
+  separate step.
 
 ### Materials checklist
 
-- [ ] Demo machine + projector
-- [ ] Each kid's URL pre-tested
-- [ ] List of every kid's 8 milestones for
-      the recap
-- [ ] Phase 9 talking points (what's next)
-- [ ] A short personal note ready
-- [ ] Optional: photo plan, snacks,
-      certificates, stickers
-- [ ] Class roster (last time on this list)
+- [ ] Demo machine
+- [ ] Seed list
+- [ ] Triage list
+- [ ] Pre-class verification of GitHub +
+      PythonAnywhere accounts
+- [ ] Projector
+- [ ] Class roster

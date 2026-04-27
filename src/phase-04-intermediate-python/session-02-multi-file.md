@@ -259,28 +259,37 @@ def add_entry(text):
 def read_entries():
     try:
         with open(JOURNAL_FILE, "r") as f:
-            return [line.strip() for line in f if line.strip()]
+            entries = []
+            for line in f:
+                cleaned = line.strip()
+                if cleaned:
+                    entries.append(cleaned)
+            return entries
     except FileNotFoundError:
         return []
 ```
 
 Save.
 
-The `[line.strip() for line in f if line.strip()]` is a
-**list comprehension** — a compact way to build a list. It's
-equivalent to:
+A walk-through of the new bit inside the `with`:
 
-```python
-result = []
-for line in f:
-    cleaned = line.strip()
-    if cleaned:
-        result.append(cleaned)
-return result
-```
+- Open the file and loop over each line in turn.
+- `cleaned = line.strip()` — `.strip()` removes the trailing
+  newline character and any whitespace. (Same `.strip()` you
+  put on every `input()` back in Phase 3 — same reason here.)
+- `if cleaned:` — skip blank lines.
+- `entries.append(cleaned)` — add the cleaned line to our
+  growing list.
+- After the loop, return the list.
 
-Just shorter. List comprehensions are common Python; we
-haven't formally taught them but they're worth recognizing.
+Reading lines from a file is the most common place you'll
+need `.strip()`. Every line carries a trailing newline you
+*almost never* want.
+
+(Real Python programmers usually compact this loop into a
+single line called a **list comprehension** — they're a Phase
+4 stretch goal. For now the explicit loop is the right shape
+to learn.)
 
 #### Build `main.py`
 
@@ -417,8 +426,13 @@ import random
 QUOTES_FILE = "quotes.txt"
 
 def _load_quotes():
+    quotes = []
     with open(QUOTES_FILE, "r") as f:
-        return [line.strip() for line in f if line.strip()]
+        for line in f:
+            cleaned = line.strip()
+            if cleaned:
+                quotes.append(cleaned)
+    return quotes
 
 def random_quote():
     return random.choice(_load_quotes())
@@ -479,6 +493,18 @@ start of next class.
 
 ### Stretch and extension ideas
 
+- **List comprehensions.** Python lets you collapse a
+  for/if/append loop into one line:
+  ```python
+  entries = [line.strip() for line in f if line.strip()]
+  ```
+  Read it as "the cleaned line for each line in f, but only
+  if the cleaned line isn't empty." It does exactly what
+  your explicit loop does. Try replacing your loop with it
+  in `journal.py` and confirm the program still works. List
+  comprehensions are everywhere in real Python; the explicit
+  loop is the right shape to learn first, but you should
+  recognize the compact form when you see it.
 - **Subfolders for modules.** Put related modules in a
   subfolder. To make it work as a package, add an empty
   `__init__.py` file in the subfolder. Then `import

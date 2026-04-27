@@ -74,15 +74,22 @@ keeps that cost low and flexible. The typical options:
 - **Free donated laptop.** When community members have donated
   working laptops, your family can take one at no cost. Limited
   availability — first come, first served.
-- **Refurbished mini desktop (~$150).** A small refurbished
-  desktop computer, about the size of a hardback book (a Lenovo
-  ThinkCentre M710q or similar). Plenty of power for everything
-  in the curriculum. You'll need a monitor, keyboard, and mouse —
-  ones you already have at home, or ones the class can sometimes
-  help you find through donated peripherals.
+- **Refurbished mini desktop (starting around $150-$160).** A
+  small refurbished desktop computer, about the size of a hardback
+  book (a Lenovo ThinkCentre M710q or similar). Plenty of power
+  for everything in the curriculum at the entry price; you can
+  spec up from there if you'd like more headroom. You'll need a
+  monitor, keyboard, and mouse — ones you already have at home, or
+  ones the class can sometimes help you find through donated
+  peripherals.
+- **Refurbished laptop (~$200-$300).** A refurbished business-
+  class laptop, usually a ThinkPad. Self-contained — no extra
+  monitor or keyboard needed. Good pick if your family doesn't
+  have a spare monitor lying around, or if you want your child to
+  be able to take it anywhere.
 - **Higher-end option.** If you'd prefer a newer or more powerful
-  computer for your child, talk to Mr. Eric directly. He can
-  help you pick something that works for the curriculum without
+  computer for your child, talk to Mr. Eric directly. He can help
+  you pick something that works for the curriculum without
   overspending.
 - **Not sure?** The signup form has a "let's discuss" option.
   Pick that and Mr. Eric will walk you through what fits your

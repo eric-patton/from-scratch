@@ -35,6 +35,40 @@ Sessions 5 and 6, rebuilt cleanly in one go. If you've kept up,
 this should feel like review. That's the point — you're proving to
 yourself that you can build this from memory.
 
+#### Anatomy of this game (how the parts fit together)
+
+Before you start clicking blocks, look at the shape of what you're
+building. Three sprites, each with its own job:
+
+```
+Cat sprite (the player)
+  on green flag:
+    [reset position, reset score]
+    forever:
+      [if right arrow → move right]
+      [if left arrow → move left]
+
+Apple sprite (the good thing)
+  on green flag:
+    [start at top, random x]
+    forever:
+      [fall down]
+      [if touching cat → +1 score, restart at top]
+      [if off bottom → restart at top]
+
+Rock sprite (the bad thing) — added in Part B
+  on green flag:
+    [start at top, random x]
+    forever:
+      [fall down]
+      [if touching cat → say "Game Over!", stop everything]
+      [if off bottom → restart at top]
+```
+
+Each sprite is a tiny machine that runs forever once you press the
+green flag. They don't know about each other except through
+**touching** checks. Keep this map in your head as you build.
+
 #### Set up the cat
 
 Build this on the cat:

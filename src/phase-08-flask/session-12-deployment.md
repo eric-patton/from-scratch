@@ -1,6 +1,6 @@
-## Session 11: Deployment — your Flask app on the internet
+## Session 12: Deployment — your Flask app on the internet
 
-*Phase 8 — Flask · Session 11 of 13*
+*Phase 8 — Flask · Session 12 of 14*
 
 ### What we're learning today
 
@@ -17,7 +17,7 @@ This is the moment your back-end becomes *public*.
 
 ### You'll need to remember from last time
 
-- **The notes app** from Session 10 (or any
+- **The notes app** from Sessions 10-11 (or any
   Flask app you want to deploy).
 - **Git basics** — clone, push.
 - **PythonAnywhere account** (we'll create one
@@ -178,6 +178,59 @@ When you change your code locally:
 
 A bit more manual than GitHub Pages (which
 auto-deploys on push), but workable.
+
+#### When your URL doesn't load
+
+Real talk: deployments break. The first time you
+deploy a Flask app, *most* of you will hit *some*
+error. That's normal. The fix is always the same
+two-step move: **find the error message, fix
+what it says.**
+
+**Step 1 — find the error log.** PythonAnywhere
+keeps one for every web app. In the **Web** tab,
+scroll to the **"Log files"** section. Click the
+**"Error log"** link. The most recent entries are
+at the bottom. The actual problem is usually in
+the *last few lines* — Python's traceback.
+
+**Step 2 — read the last line of the traceback.**
+That's the actual error. Common ones:
+
+- **`ModuleNotFoundError: No module named 'flask'`**
+  → You skipped `pip install --user flask` (Step
+  5 above). Run it. Reload.
+- **`ModuleNotFoundError: No module named 'app'`**
+  → Your WSGI file's `project_home` path is
+  wrong. Fix the path. Reload.
+- **`No such file or directory: 'notes.db'`** →
+  SQLite can't find your database file. The fix
+  is the absolute-path trick from Part B
+  (`os.path.join(os.path.dirname(__file__),
+  "notes.db")`). Push, pull, reload.
+- **`Something went wrong :-(` with no traceback.**
+  → The Python version mismatch (you picked
+  Python 3.10 in setup but PythonAnywhere
+  defaulted to a different one in the Web tab).
+  Check the **"Python version"** dropdown in
+  the Web tab.
+
+**Step 3 — fix it locally first.** Don't edit code
+on PythonAnywhere directly. Edit on your own
+machine (where you can test), commit, push,
+`git pull` on PythonAnywhere, reload. Always.
+
+> **Two more callbacks for "did you forget?"** —
+> *Did you push your latest commit to GitHub?*
+> Did you `git pull` on PythonAnywhere after?
+> Did you click **Reload** in the Web tab? All
+> three are required for your changes to show
+> up. Forgetting any one of them is the most
+> common deploy frustration.
+
+You'll get fast at this loop with practice. Real
+production engineers do this exact dance every
+day.
 
 **Checkpoint:** *Your notes app is at a public
 URL. Anyone can sign up.* **This is the natural
@@ -418,7 +471,7 @@ a public URL.
 
 Next two weeks are *yours.* You plan and build a
 **full-stack milestone** — your design, your
-data, your users. By Session 13's demo, your app
+data, your users. By Session 14's demo, your app
 will be at a real URL anyone in the world can
 visit.
 

@@ -114,6 +114,7 @@ with a `.` after the value:
 | `s.lower()` | returns the string in lowercase |
 | `s.strip()` | removes whitespace from the start and end |
 | `s.replace("old", "new")` | replaces parts of the string |
+| `s.split(" ")` | splits the string into a list at each space |
 
 Try these:
 
@@ -139,6 +140,59 @@ If you want to change `name` itself, you'd assign back to it:
 ```python
 name = name.upper()
 ```
+
+#### `.strip()` — clean up `input()` (do this *every time*)
+
+There's a quiet bug that gets people for years: `input()` and
+file reading often hand you strings with **invisible whitespace
+on the ends.** A trailing space. A leftover newline character.
+That whitespace makes string comparisons silently fail:
+
+```python
+guess = input("Guess: ")
+if guess == "yes":
+    print("You got it!")
+```
+
+If the kid types `yes` and hits enter, this works fine — but if
+their input has a trailing space (easy to hit by accident), the
+comparison breaks. The string `"yes "` is *not* equal to
+`"yes"`.
+
+**Fix:** call `.strip()` on every `input()` you ever do.
+
+```python
+guess = input("Guess: ").strip()
+```
+
+Now `"yes "`, `"yes"`, and `"  yes  "` all become `"yes"`. The
+comparison works.
+
+> **From now on, every `input()` in the curriculum gets
+> `.strip()` chained on it.** It's one of those "always do this"
+> habits — like wearing a seatbelt. Free protection.
+
+#### `.split()` — break a string into a list of pieces
+
+If a string has multiple words separated by spaces, `.split(" ")`
+breaks it into a **list** of those words. (Lists are coming in
+Session 8 — for now, just know it gives you back several pieces
+you can use.)
+
+```python
+sentence = "the quick brown fox"
+words = sentence.split(" ")
+print(words)
+# Output: ['the', 'quick', 'brown', 'fox']
+```
+
+You can split on any character, not just spaces. `s.split(",")`
+splits on commas. Useful when input comes in as a list of things
+the user typed: `"red,blue,green".split(",")` gives you each
+color separately.
+
+We'll use `.split()` heavily once we hit lists. For now, just
+know it exists and what it does.
 
 #### How long is a string?
 
@@ -219,7 +273,7 @@ means "step backward." Don't memorize the syntax; just remember
 Combine everything from Part A and Part B:
 
 ```python
-name = input("What's your name? ")
+name = input("What's your name? ").strip()
 
 print(f"Your name is {name}.")
 print(f"It has {len(name)} characters.")
@@ -229,6 +283,8 @@ print(f"Reversed: {name[::-1]}")
 ```
 
 Save. Run. Type your name.
+
+(Notice `.strip()` on the `input()` — that's the new habit.)
 
 The shell shows five facts about your name, all using f-strings.
 
@@ -334,10 +390,10 @@ start of next class.
 - F-string formatting: `f"{age:>5}"` right-justifies in 5
   spaces. `f"{price:.2f}"` shows 2 decimal places. There are
   many — try them and see.
-- `s.split(" ")` splits a string on spaces, returning a list.
-  Lists are coming in Session 8 — try this when we get there.
-- `s.startswith("hello")` returns True/False. Useful in
-  conditionals.
+- `s.startswith("hello")` and `s.endswith("!")` return
+  True/False. Useful in conditionals.
+- `s.find("substring")` returns the position where a substring
+  first appears (or `-1` if it's not in the string).
 - Multi-line strings: `"""Hello\nWorld"""` (triple quotes for
   strings that span lines).
 

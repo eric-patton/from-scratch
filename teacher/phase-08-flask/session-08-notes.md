@@ -338,10 +338,10 @@ then.)*
 
 - **Session 9 (accounts).** `users` table with
   hashed passwords. Same CRUD pattern.
-- **Session 10 (notes app).** Multi-table app:
-  users + notes, with auth. Real production
-  shape.
-- **Session 11 (deployment).** Deploy a real
+- **Sessions 10-11 (notes app).** Multi-table
+  app: users + notes, with auth. Real
+  production shape.
+- **Session 12 (deployment).** Deploy a real
   database-backed app to the public.
 - **Phase 5/7 callback:** todo apps in
   customtkinter and browser. Now upgrade to

@@ -14,7 +14,7 @@ software engineer.
 
 ## What this phase is
 
-Thirteen sessions on building web apps with **Flask**
+Fourteen sessions on building web apps with **Flask**
 — a small, beginner-friendly Python web framework.
 You'll learn how the browser-server conversation
 works, how to handle forms, how to store data in a
@@ -35,10 +35,11 @@ internet.
 | 7 | SQLite — your first database | What a database is, the `sqlite3` module |
 | 8 | Database in Flask — CRUD | SELECT/INSERT/UPDATE/DELETE in routes |
 | 9 | User accounts | Signup, login, logout, password hashing |
-| 10 | Build a notes app together | Full-stack integration |
-| 11 | Deployment | Real public hosting (PythonAnywhere) |
-| 12 | Milestone day 1 | Plan + build your full-stack app |
-| 13 | Milestone day 2 + demo | Finish + showcase + curriculum close |
+| 10 | Notes app — foundation | Two-table schema, per-user filter, list + create |
+| 11 | Notes app — polish | View, edit, delete, multi-user + security demo |
+| 12 | Deployment | Real public hosting (PythonAnywhere) |
+| 13 | Milestone day 1 | Plan + build your full-stack app |
+| 14 | Milestone day 2 + demo | Finish + showcase + curriculum close |
 
 ## What you'll build
 
@@ -46,11 +47,13 @@ internet.
   page-per-route sites, form handlers, simple games.
 - **Sessions 7-9:** apps with persistent data and
   user accounts.
-- **Session 10:** **a multi-user notes app** — auth,
-  database, full UI. Built as a class.
-- **Session 11:** deploy that app to a public URL
+- **Sessions 10-11:** **a multi-user notes app** —
+  auth, database, full CRUD. Built as a class
+  across two sessions so the per-user security
+  pattern gets the room it deserves.
+- **Session 12:** deploy that app to a public URL
   with real users (you and your classmates).
-- **Sessions 12-13:** *your* full-stack milestone —
+- **Sessions 13-14:** *your* full-stack milestone —
   your design, deployed, anyone can sign up and use.
 
 ## What you'll need
@@ -64,7 +67,7 @@ internet.
 - **`sqlite3`** — built into Python.
 - **A browser** for testing.
 - **Thonny** for editing.
-- **A PythonAnywhere account** by Session 11 — free,
+- **A PythonAnywhere account** by Session 12 — free,
   set up together.
 
 ## How sessions work
@@ -146,24 +149,35 @@ easier.
 
 ## A note about pacing
 
-Phase 8 has **fewer "wow" moments per session** than
-Phases 6-7 because the back-end is *plumbing*. The
-visible result is often the same — but what's
-*behind* the page is fundamentally different.
+The back-end is quieter on the surface than Phases
+6-7 — your screen often looks similar from session
+to session. **But what's *behind* each page changes
+fundamentally.** Each session this phase, your
+server starts doing something it couldn't do
+before.
 
-The big payoffs:
+Watch what your *server* gains, session by session:
 
-- **Session 5** (forms working) — the first time
-  the user *changes data on the server*.
-- **Session 7** (database) — your first real
-  persistent data.
-- **Session 9** (user accounts) — "I have my own
-  account on a thing I built."
-- **Session 11** (deployment) — your friends can
-  sign up and use it.
-
-Push through Sessions 1-4 — they're foundation.
-Sessions 5+ are when it gets exciting.
+- **Sessions 1-4** — your server learns to talk.
+  Hello world (1), then dynamic URLs (2), then
+  rendering templates (3), then serving styles
+  and shared layouts (4).
+- **Session 5** (forms) — *the first time the
+  user changes data on your server.* Real
+  conversation, not just reading.
+- **Session 6** (sessions + flash) — your server
+  starts *remembering* who's who across requests.
+- **Session 7** (database) — *your first real
+  persistent data.* It survives restarts.
+- **Sessions 8-9** (CRUD + user accounts) —
+  full read/write to the database, and "I have
+  my own account on a thing I built."
+- **Sessions 10-11** (notes app) — *the
+  integration moment.* Multi-user. Per-user
+  data isolation. Real CRUD. The shape of every
+  modern web app.
+- **Session 12** (deployment) — your friends
+  can sign up and use it.
 
 ## Where to start
 

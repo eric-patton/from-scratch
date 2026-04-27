@@ -1,6 +1,6 @@
-## Session 12: Milestone project work day 1
+## Session 13: Milestone project work day 1
 
-*Phase 8 — Flask · Session 12 of 13*
+*Phase 8 — Flask · Session 13 of 14*
 
 ### What we're learning today
 
@@ -136,13 +136,13 @@ Pick one and modify:
   permissions.
 - **Class scheduler** — assignments + due
   dates.
-- **Note-taking** (extension of Session 10).
+- **Note-taking** (extension of Sessions 10-11).
 - **Bookmark manager** — save URLs with tags.
 - **Pomodoro / time tracker** with stats.
 
 **Variants of in-class projects:**
 
-- **The notes app from Session 10** with new
+- **The notes app from Sessions 10-11** with new
   features (tags, search, public mode,
   sharing).
 - **A guestbook (Session 5/8) + accounts** so
@@ -212,14 +212,14 @@ significant change.
 #### Use what you've learned
 
 - **Auth** from Session 9.
-- **Multi-table database** from Session 10.
+- **Multi-table database** from Sessions 10-11.
 - **Templates with extends** from Session 4.
 - **Forms with POST-Redirect-GET** from Session 5.
 - **Flash messages** from Session 6.
 - **Per-user data isolation** with `WHERE
-  user_id = ?` from Session 10.
+  user_id = ?` from Sessions 10-11.
 
-The complete patterns are in Sessions 1-11.
+The complete patterns are in Sessions 1-12.
 
 ### Wrap-up
 

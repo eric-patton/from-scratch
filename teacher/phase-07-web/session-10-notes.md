@@ -227,6 +227,22 @@ JS uses classes (or modules) for organization.
   add is the kid you focus on. Most common cause:
   forgot `preventDefault`, wrong selector, or
   forgot to clear input.
+- **Cluster effect — Sessions 8-10 are tight.**
+  Session 8 (JS syntax) is broad, Session 9 (DOM)
+  introduces every interaction primitive, and
+  today's session asks them to compose all of it
+  into a real app. There is *no buffer* in this
+  cluster. If a kid limped through 8 or 9, they
+  will drown in 10 alone. **Pair anyone who
+  struggled in 9 with a buddy for today** — the
+  pair-program version, where one person types
+  and the other reads aloud, lands the
+  integration without panic. This is also a
+  natural moment to revisit Session 9's counter
+  example before starting; it's the same "state +
+  events + sync" shape on a smaller scale, and a
+  five-minute warmup beats jumping straight into
+  Step 1.
 
 ### What to watch for
 

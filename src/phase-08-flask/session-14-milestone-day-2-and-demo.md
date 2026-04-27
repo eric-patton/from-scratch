@@ -1,6 +1,6 @@
-## Session 13: Milestone day 2 + demo + curriculum close
+## Session 14: Milestone day 2 + demo + curriculum close
 
-*Phase 8 — Flask · Session 13 of 13 — last
+*Phase 8 — Flask · Session 14 of 14 — last
 session of the entire curriculum*
 
 ### What we're learning today
@@ -189,6 +189,41 @@ The single best way to grow as a programmer is
 **building things you care about.** Pick a
 problem in your life. Build a tool that fixes
 it. Repeat.
+
+##### A few seed projects to try this week
+
+If you want a concrete next step (and momentum
+this week, while everything is fresh), pick one
+of these:
+
+- **A habit tracker.** Like the notes app, but
+  tracks *streaks* — every day you check off "I
+  did the thing," and the longest current
+  streak is shown. New table: `checkins`. Same
+  per-user filter, same auth.
+- **A reading log.** Title, author, date
+  finished, rating, notes. List. Sort by date
+  or rating.
+- **A bookmark manager.** Save URLs with tags.
+  Search by tag.
+- **Extend one of your milestones.** Pick the
+  milestone you're proudest of and add *one*
+  feature you wished you'd had time for.
+- **A tiny tool you actually need.** A timer
+  for chores, a calculator for something
+  specific to your life, a checklist for your
+  morning routine. *Real things you'd use.*
+- **Port a Phase 6 game to JavaScript.** Phase
+  7 Sessions 12-13 covered Canvas. Take your
+  Pygame milestone and rebuild it in the
+  browser, where anyone can play.
+- **An API + a front-end.** Build a Flask app
+  that returns JSON, and a Phase-7-style HTML
+  page that uses `fetch` to load and display
+  the data. Real full-stack, your design.
+
+Pick one. Build the simplest version this
+weekend. Send Mr. Eric the URL when it works.
 
 #### Contribute to open source
 

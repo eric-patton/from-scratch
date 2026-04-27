@@ -140,6 +140,13 @@ This is how real CLI tools work — `git commit "message"`,
 `python script.py argument`, etc. Each space-separated word
 becomes an item in `argv`.
 
+> **About different machines:** the class machines run
+> Linux, where `python tour.py hello world` works exactly as
+> shown. If you try this from a Windows home laptop and `python`
+> isn't found, try `py tour.py hello world` instead. Same
+> behavior — `sys.argv` works on every operating system once
+> you can launch the script.
+
 #### `os` — operating system stuff
 
 `os` has lots of functions for interacting with the operating

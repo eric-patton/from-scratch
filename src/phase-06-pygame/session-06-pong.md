@@ -185,6 +185,18 @@ ball_dx = 5
 ball_dy = 4
 ```
 
+About those two lines: a `Rect` is created with its
+*top-left* at `(0, 0)`, but you usually want to position
+it by its *center* (especially for a ball — "ball is in the
+middle of the screen" makes more sense than "ball's top-left
+corner is somewhere"). So we make the rect with size and a
+throwaway position, then immediately set `.center` to where
+we actually want it. `Rect` has shortcuts for every edge —
+`.top`, `.bottom`, `.left`, `.right`, `.centerx`,
+`.centery` — and assigning to any of them moves the whole
+rect to land that edge or center where you said. Useful
+the rest of this session.
+
 In update, replace the position math with rect math:
 
 ```python

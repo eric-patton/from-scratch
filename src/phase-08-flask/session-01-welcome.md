@@ -170,7 +170,7 @@ specific door on your machine. Flask defaults to
 "front doors" most websites use.)
 
 For now: this is a *local* server. Only your
-machine can reach it. Real deployment (Session 11)
+machine can reach it. Real deployment (Session 12)
 puts it on a real public URL.
 
 #### Edit and reload

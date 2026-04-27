@@ -349,7 +349,7 @@ the pattern.
   forget my password?" Real concern. Real apps
   add password reset (out of scope).
 - **Kids treating the demo like a real account.**
-  Reinforce: this is local; deploy is Session 11
+  Reinforce: this is local; deploy is Session 12
   for real publicness.
 
 ### After class
@@ -364,12 +364,13 @@ then.)*
 
 ### Connections forward
 
-- **Session 10 (notes app).** Each user has their
-  own notes. `WHERE user_id = ?` in queries.
-- **Session 11 (deployment).** Multi-user app
+- **Sessions 10-11 (notes app).** Each user has
+  their own notes. `WHERE user_id = ?` in
+  queries; security demo across both sessions.
+- **Session 12 (deployment).** Multi-user app
   hosted on a real URL. *People can sign up and
   use it.*
-- **Sessions 12-13 (milestone).** Their milestone
+- **Sessions 13-14 (milestone).** Their milestone
   apps will likely have user accounts.
 - **Phase 5/6/7 callback:** all the previous
   todo/notes/games stayed local; this is the
