@@ -492,6 +492,13 @@ doesn't feel lost" — not "identical experience."
   used in Sessions 10-11) is spec'd in the Session 10 teacher
   notes but not yet built — needs ~1-2 hours before those
   sessions can run.
+- **Phase 7 (HTML/CSS/JS web) — all 17 sessions drafted**
+  (Welcome to the web, HTML tags + structure, CSS basics,
+  Box model, Flexbox, Personal homepage, Forms,
+  JavaScript intro, DOM, Interactive todo list, localStorage,
+  Canvas, Canvas mini-game, Fetch + JSON, GitHub Pages,
+  Milestone Day 1, Milestone Day 2 + Demo). **No CSS Grid**
+  — Flexbox only per design call.
 - `tools/new-session.sh` scaffolder + `tools/build-book.sh`
 - GitHub Actions deploy to Pages
 
